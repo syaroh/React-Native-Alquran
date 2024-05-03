@@ -24,15 +24,14 @@
 
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
-import User from './screens/User';
-import Home from './screens/Home';
-import Product from './screens/Product';
+import Setting from './screens/Setting';
+import Surah from './screens/Surah';
+import JUZ from './screens/JUZ';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import DetailProduct from './screens/DetailProduct';
-// import DetailProduct from './screens/Detail-Product';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -47,8 +46,8 @@ function App() {
           options={{headerShown: false}}
         />
         <Stack.Screen
-          name="Product"
-          component={Product}
+          name="JUZ"
+          component={JUZ}
           options={{headerShown: false}}
         />
         <Stack.Screen name="DetailProduct" component={DetailProduct} />
@@ -64,12 +63,12 @@ function MainTab() {
         tabBarIcon: ({color, size}) => {
           let iconName;
 
-          if (route.name === 'Home') {
-            iconName = 'home';
-          } else if (route.name === 'Product') {
-            iconName = 'cart';
+          if (route.name === 'SURAH') {
+            iconName = 'book-outline';
+          } else if (route.name === 'JUZ') {
+            iconName = 'list-outline';
           } else {
-            iconName = 'person';
+            iconName = 'grid-outline';
           }
 
           return <Ionicons name={iconName} size={size} color={color} />;
@@ -78,13 +77,17 @@ function MainTab() {
         tabBarActiveTintColor: 'purple',
         // tabBarInactiveTintColor: ''
       })}>
-      <Tab.Screen name="Home" component={Home} options={{headerShown: false}} />
       <Tab.Screen
-        name="Product"
-        component={Product}
-        options={{headerShown: false, tabBarBadge: 3}}
+        name="SURAH"
+        component={Surah}
+        options={{headerShown: false}}
       />
-      <Tab.Screen name="User" component={User} options={{headerShown: false}} />
+      <Tab.Screen name="JUZ" component={JUZ} options={{headerShown: false}} />
+      <Tab.Screen
+        name="SETTING"
+        component={Setting}
+        options={{headerShown: false}}
+      />
     </Tab.Navigator>
   );
 }

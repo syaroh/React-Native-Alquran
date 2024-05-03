@@ -1,7 +1,7 @@
 import {Image, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import Icon from 'react-native-vector-icons/FontAwesome5';
-import Product from './Product';
+import Product from './JUZ';
 
 const DetailProduct = () => {
   return (

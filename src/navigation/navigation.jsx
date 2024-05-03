@@ -1,10 +1,10 @@
 import * as React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, Settings} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import User from '../screens/User';
-import Home from '../screens/Home';
-import Product from '../screens/Product';
+import Setting from '../screens/Setting';
+import Surah from '../screens/Surah';
+import JUZ from '../screens/JUZ';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import DetailProduct from '../screens/DetailProduct';
 
@@ -16,8 +16,8 @@ function Navigation() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="MainTab" component={MainTab} />
-        <Stack.Screen name="User" component={User} />
-        <Stack.Screen name="DetailProduct" component={DetailProduct} />
+        <Stack.Screen name="Setting" component={Setting} />
+        <Stack.Screen name="JUZ" component={JUZ} />
       </Stack.Navigator>
     </NavigationContainer>
   );
@@ -26,9 +26,9 @@ function Navigation() {
 function MainTab() {
   return (
     <Tab.Navigation>
-      <Tab.Screen name="Home" component={Home} />
-      <Tab.Screen name="Product" component={Product} />
-      <Tab.Screen name="User" component={User} />
+      <Tab.Screen name="Surah" component={Surah} />
+      <Tab.Screen name="JUZ" component={JUZ} />
+      <Tab.Screen name="Setting" component={Setting} />
     </Tab.Navigation>
   );
 }
