@@ -1,9 +1,8 @@
 import {Image, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import Icon from 'react-native-vector-icons/FontAwesome5';
-import Product from './JUZ';
 
-const DetailProduct = () => {
+const Detail = () => {
   return (
     <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
       <Text>Detail Screen</Text>
@@ -22,6 +21,6 @@ const DetailProduct = () => {
   );
 };
 
-export default DetailProduct;
+export default Detail;
 
 const styles = StyleSheet.create({});

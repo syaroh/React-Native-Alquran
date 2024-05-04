@@ -7,30 +7,29 @@ import {
   Image,
 } from 'react-native';
 import React from 'react';
-import DetailProduct from './DetailProduct';
+import Detail from '../screens/pages/Detail';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-export default function Product({navigation}) {
+export default function JUZ({navigation}) {
   return (
-    <View>
+    <View style={{marginHorizontal: 10}}>
+      <View
+        style={{
+          height: 40,
+          backgroundColor: '#da81da92',
+          margin: 5,
+          marginBottom: 0,
+          marginLeft: 4,
+          borderRadius: 5,
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}>
+        <Text style={styles.text}>JUZ 1 - 30</Text>
+      </View>
       <ScrollView>
         {/* View 1 */}
         <View>
-          <View
-            style={{
-              width: 350,
-              height: 40,
-              backgroundColor: '#da81da92',
-              margin: 5,
-              marginBottom: 0,
-              marginLeft: 4,
-              borderRadius: 5,
-              justifyContent: 'center',
-              alignItems: 'center',
-            }}>
-            <Text style={styles.text}>JUZ 1 - 30</Text>
-          </View>
           <ScrollView horizontal={true}>
             <View
               style={{
@@ -47,6 +46,7 @@ export default function Product({navigation}) {
                 <View
                   style={{
                     width: 150,
+                    height: 200,
                     backgroundColor: 'white',
                     padding: 10,
                     border: 5,
@@ -59,8 +59,8 @@ export default function Product({navigation}) {
                       uri: 'https://www.incredible.co.za/media/catalog/product/cache/7ce9addd40d23ee411c2cc726ad5e7ed/1/0/10140077_inc_ecommerce_d533.png',
                     }}
                     style={{
-                      width: 130,
-                      height: 107,
+                      width: 60,
+                      height: 50,
                       borderColor: 'purple',
                       backgroundColor: 'purple',
                       borderRadius: 8,
@@ -97,7 +97,7 @@ export default function Product({navigation}) {
                       borderRadius: 25,
                     }}>
                     <TouchableOpacity
-                      onPress={() => navigation.navigate('DetailProduct')}>
+                      onPress={() => navigation.navigate('JUZ1')}>
                       <Text
                         style={{
                           fontSize: 14,
@@ -115,6 +115,7 @@ export default function Product({navigation}) {
                 <View
                   style={{
                     width: 150,
+                    height: 200,
                     backgroundColor: 'white',
                     padding: 10,
                     border: 5,
@@ -127,8 +128,8 @@ export default function Product({navigation}) {
                       uri: 'https://www.incredible.co.za/media/catalog/product/cache/7ce9addd40d23ee411c2cc726ad5e7ed/1/0/10140077_inc_ecommerce_d533.png',
                     }}
                     style={{
-                      width: 130,
-                      height: 107,
+                      width: 60,
+                      height: 50,
                       borderColor: 'purple',
                       backgroundColor: 'purple',
                       borderRadius: 8,
@@ -137,7 +138,7 @@ export default function Product({navigation}) {
 
                   <Text
                     style={{fontSize: 14, fontWeight: 'bold', marginTop: 16}}>
-                    JUZ 1
+                    JUZ 2
                   </Text>
                   <Text
                     style={{
@@ -146,7 +147,7 @@ export default function Product({navigation}) {
                       marginTop: 12,
                       color: 'orange',
                     }}>
-                    AL FATIHAH AYAT 1 -
+                    AL BAQARAH AYAT 142-
                   </Text>
                   <Text
                     style={{
@@ -155,7 +156,7 @@ export default function Product({navigation}) {
                       color: 'orange',
                       marginBottom: 12,
                     }}>
-                    AL BAQARAH AYAT 141
+                    AL BAQARAH AYAT 252
                   </Text>
                   <View
                     style={{
@@ -165,7 +166,7 @@ export default function Product({navigation}) {
                       borderRadius: 25,
                     }}>
                     <TouchableOpacity
-                      onPress={() => navigation.navigate('DetailProduct')}>
+                      onPress={() => navigation.navigate('JUZ1')}>
                       <Text
                         style={{
                           fontSize: 14,
@@ -183,6 +184,7 @@ export default function Product({navigation}) {
                 <View
                   style={{
                     width: 150,
+                    height: 200,
                     backgroundColor: 'white',
                     padding: 10,
                     border: 5,
@@ -195,8 +197,8 @@ export default function Product({navigation}) {
                       uri: 'https://www.incredible.co.za/media/catalog/product/cache/7ce9addd40d23ee411c2cc726ad5e7ed/1/0/10140077_inc_ecommerce_d533.png',
                     }}
                     style={{
-                      width: 130,
-                      height: 107,
+                      width: 60,
+                      height: 50,
                       borderColor: 'purple',
                       backgroundColor: 'purple',
                       borderRadius: 8,
@@ -205,7 +207,7 @@ export default function Product({navigation}) {
 
                   <Text
                     style={{fontSize: 14, fontWeight: 'bold', marginTop: 16}}>
-                    JUZ 1
+                    JUZ 3
                   </Text>
                   <Text
                     style={{
@@ -214,7 +216,7 @@ export default function Product({navigation}) {
                       marginTop: 12,
                       color: 'orange',
                     }}>
-                    AL FATIHAH AYAT 1 -
+                    AL BAQARAH AYAT 253-
                   </Text>
                   <Text
                     style={{
@@ -223,7 +225,7 @@ export default function Product({navigation}) {
                       color: 'orange',
                       marginBottom: 12,
                     }}>
-                    AL BAQARAH AYAT 141
+                    ALI - IMRAN AYAT 92
                   </Text>
                   <View
                     style={{
@@ -233,7 +235,7 @@ export default function Product({navigation}) {
                       borderRadius: 25,
                     }}>
                     <TouchableOpacity
-                      onPress={() => navigation.navigate('DetailProduct')}>
+                      onPress={() => navigation.navigate('JUZ1')}>
                       <Text
                         style={{
                           fontSize: 14,
@@ -251,6 +253,7 @@ export default function Product({navigation}) {
                 <View
                   style={{
                     width: 150,
+                    height: 200,
                     backgroundColor: 'white',
                     padding: 10,
                     border: 5,
@@ -263,8 +266,8 @@ export default function Product({navigation}) {
                       uri: 'https://www.incredible.co.za/media/catalog/product/cache/7ce9addd40d23ee411c2cc726ad5e7ed/1/0/10140077_inc_ecommerce_d533.png',
                     }}
                     style={{
-                      width: 130,
-                      height: 107,
+                      width: 60,
+                      height: 50,
                       borderColor: 'purple',
                       backgroundColor: 'purple',
                       borderRadius: 8,
@@ -273,7 +276,7 @@ export default function Product({navigation}) {
 
                   <Text
                     style={{fontSize: 14, fontWeight: 'bold', marginTop: 16}}>
-                    JUZ 1
+                    JUZ 4
                   </Text>
                   <Text
                     style={{
@@ -282,7 +285,7 @@ export default function Product({navigation}) {
                       marginTop: 12,
                       color: 'orange',
                     }}>
-                    AL FATIHAH AYAT 1 -
+                    ALI IMRAN AYAT 93 -
                   </Text>
                   <Text
                     style={{
@@ -291,7 +294,7 @@ export default function Product({navigation}) {
                       color: 'orange',
                       marginBottom: 12,
                     }}>
-                    AL BAQARAH AYAT 141
+                    AN NISA' AYAT 23
                   </Text>
                   <View
                     style={{
@@ -301,7 +304,7 @@ export default function Product({navigation}) {
                       borderRadius: 25,
                     }}>
                     <TouchableOpacity
-                      onPress={() => navigation.navigate('DetailProduct')}>
+                      onPress={() => navigation.navigate('JUZ1')}>
                       <Text
                         style={{
                           fontSize: 14,
@@ -319,6 +322,7 @@ export default function Product({navigation}) {
                 <View
                   style={{
                     width: 150,
+                    height: 200,
                     backgroundColor: 'white',
                     padding: 10,
                     border: 5,
@@ -331,8 +335,8 @@ export default function Product({navigation}) {
                       uri: 'https://www.incredible.co.za/media/catalog/product/cache/7ce9addd40d23ee411c2cc726ad5e7ed/1/0/10140077_inc_ecommerce_d533.png',
                     }}
                     style={{
-                      width: 130,
-                      height: 107,
+                      width: 60,
+                      height: 50,
                       borderColor: 'purple',
                       backgroundColor: 'purple',
                       borderRadius: 8,
@@ -341,7 +345,7 @@ export default function Product({navigation}) {
 
                   <Text
                     style={{fontSize: 14, fontWeight: 'bold', marginTop: 16}}>
-                    JUZ 1
+                    JUZ 5
                   </Text>
                   <Text
                     style={{
@@ -350,7 +354,7 @@ export default function Product({navigation}) {
                       marginTop: 12,
                       color: 'orange',
                     }}>
-                    AL FATIHAH AYAT 1 -
+                    AN NISA' AYAT 24 -
                   </Text>
                   <Text
                     style={{
@@ -359,7 +363,7 @@ export default function Product({navigation}) {
                       color: 'orange',
                       marginBottom: 12,
                     }}>
-                    AL BAQARAH AYAT 141
+                    AN NISA' AYAT 147
                   </Text>
                   <View
                     style={{
@@ -369,7 +373,7 @@ export default function Product({navigation}) {
                       borderRadius: 25,
                     }}>
                     <TouchableOpacity
-                      onPress={() => navigation.navigate('DetailProduct')}>
+                      onPress={() => navigation.navigate('JUZ1')}>
                       <Text
                         style={{
                           fontSize: 14,
@@ -402,10 +406,11 @@ export default function Product({navigation}) {
                 borderRadius: 8,
               }}>
               <ScrollView horizontal={true}>
-                {/* jus 1 */}
+                {/* jus 6 */}
                 <View
                   style={{
                     width: 150,
+                    height: 200,
                     backgroundColor: 'white',
                     padding: 10,
                     border: 5,
@@ -418,8 +423,8 @@ export default function Product({navigation}) {
                       uri: 'https://www.incredible.co.za/media/catalog/product/cache/7ce9addd40d23ee411c2cc726ad5e7ed/1/0/10140077_inc_ecommerce_d533.png',
                     }}
                     style={{
-                      width: 130,
-                      height: 107,
+                      width: 60,
+                      height: 50,
                       borderColor: 'purple',
                       backgroundColor: 'purple',
                       borderRadius: 8,
@@ -428,7 +433,7 @@ export default function Product({navigation}) {
 
                   <Text
                     style={{fontSize: 14, fontWeight: 'bold', marginTop: 16}}>
-                    JUZ 1
+                    JUZ 6
                   </Text>
                   <Text
                     style={{
@@ -437,7 +442,7 @@ export default function Product({navigation}) {
                       marginTop: 12,
                       color: 'orange',
                     }}>
-                    AL FATIHAH AYAT 1 -
+                    AN NISA' AYAT 148 -
                   </Text>
                   <Text
                     style={{
@@ -446,7 +451,7 @@ export default function Product({navigation}) {
                       color: 'orange',
                       marginBottom: 12,
                     }}>
-                    AL BAQARAH AYAT 141
+                    AL MAIDAH AYAT 81
                   </Text>
                   <View
                     style={{
@@ -456,7 +461,7 @@ export default function Product({navigation}) {
                       borderRadius: 25,
                     }}>
                     <TouchableOpacity
-                      onPress={() => navigation.navigate('DetailProduct')}>
+                      onPress={() => navigation.navigate('JUZ1')}>
                       <Text
                         style={{
                           fontSize: 14,
@@ -470,10 +475,11 @@ export default function Product({navigation}) {
                   </View>
                 </View>
 
-                {/* jus 2 */}
+                {/* jus 7 */}
                 <View
                   style={{
                     width: 150,
+                    height: 200,
                     backgroundColor: 'white',
                     padding: 10,
                     border: 5,
@@ -486,8 +492,8 @@ export default function Product({navigation}) {
                       uri: 'https://www.incredible.co.za/media/catalog/product/cache/7ce9addd40d23ee411c2cc726ad5e7ed/1/0/10140077_inc_ecommerce_d533.png',
                     }}
                     style={{
-                      width: 130,
-                      height: 107,
+                      width: 60,
+                      height: 50,
                       borderColor: 'purple',
                       backgroundColor: 'purple',
                       borderRadius: 8,
@@ -496,7 +502,7 @@ export default function Product({navigation}) {
 
                   <Text
                     style={{fontSize: 14, fontWeight: 'bold', marginTop: 16}}>
-                    JUZ 1
+                    JUZ 7
                   </Text>
                   <Text
                     style={{
@@ -505,7 +511,7 @@ export default function Product({navigation}) {
                       marginTop: 12,
                       color: 'orange',
                     }}>
-                    AL FATIHAH AYAT 1 -
+                    AL MAIDAH AYAT 82 -
                   </Text>
                   <Text
                     style={{
@@ -514,7 +520,7 @@ export default function Product({navigation}) {
                       color: 'orange',
                       marginBottom: 12,
                     }}>
-                    AL BAQARAH AYAT 141
+                    AL AN'AM AYAT 110
                   </Text>
                   <View
                     style={{
@@ -524,7 +530,7 @@ export default function Product({navigation}) {
                       borderRadius: 25,
                     }}>
                     <TouchableOpacity
-                      onPress={() => navigation.navigate('DetailProduct')}>
+                      onPress={() => navigation.navigate('JUZ1')}>
                       <Text
                         style={{
                           fontSize: 14,
@@ -538,10 +544,11 @@ export default function Product({navigation}) {
                   </View>
                 </View>
 
-                {/* jus 3 */}
+                {/* jus 8 */}
                 <View
                   style={{
                     width: 150,
+                    height: 200,
                     backgroundColor: 'white',
                     padding: 10,
                     border: 5,
@@ -554,8 +561,8 @@ export default function Product({navigation}) {
                       uri: 'https://www.incredible.co.za/media/catalog/product/cache/7ce9addd40d23ee411c2cc726ad5e7ed/1/0/10140077_inc_ecommerce_d533.png',
                     }}
                     style={{
-                      width: 130,
-                      height: 107,
+                      width: 60,
+                      height: 50,
                       borderColor: 'purple',
                       backgroundColor: 'purple',
                       borderRadius: 8,
@@ -564,7 +571,7 @@ export default function Product({navigation}) {
 
                   <Text
                     style={{fontSize: 14, fontWeight: 'bold', marginTop: 16}}>
-                    JUZ 1
+                    JUZ 8
                   </Text>
                   <Text
                     style={{
@@ -573,7 +580,7 @@ export default function Product({navigation}) {
                       marginTop: 12,
                       color: 'orange',
                     }}>
-                    AL FATIHAH AYAT 1 -
+                    AL AN'AM AYAT 111 -
                   </Text>
                   <Text
                     style={{
@@ -582,7 +589,7 @@ export default function Product({navigation}) {
                       color: 'orange',
                       marginBottom: 12,
                     }}>
-                    AL BAQARAH AYAT 141
+                    AL A'RAF AYAT 87
                   </Text>
                   <View
                     style={{
@@ -592,7 +599,7 @@ export default function Product({navigation}) {
                       borderRadius: 25,
                     }}>
                     <TouchableOpacity
-                      onPress={() => navigation.navigate('DetailProduct')}>
+                      onPress={() => navigation.navigate('JUZ1')}>
                       <Text
                         style={{
                           fontSize: 14,
@@ -606,10 +613,11 @@ export default function Product({navigation}) {
                   </View>
                 </View>
 
-                {/* jus 4 */}
+                {/* jus 9 */}
                 <View
                   style={{
                     width: 150,
+                    height: 200,
                     backgroundColor: 'white',
                     padding: 10,
                     border: 5,
@@ -622,8 +630,8 @@ export default function Product({navigation}) {
                       uri: 'https://www.incredible.co.za/media/catalog/product/cache/7ce9addd40d23ee411c2cc726ad5e7ed/1/0/10140077_inc_ecommerce_d533.png',
                     }}
                     style={{
-                      width: 130,
-                      height: 107,
+                      width: 60,
+                      height: 50,
                       borderColor: 'purple',
                       backgroundColor: 'purple',
                       borderRadius: 8,
@@ -632,7 +640,7 @@ export default function Product({navigation}) {
 
                   <Text
                     style={{fontSize: 14, fontWeight: 'bold', marginTop: 16}}>
-                    JUZ 1
+                    JUZ 9
                   </Text>
                   <Text
                     style={{
@@ -641,7 +649,7 @@ export default function Product({navigation}) {
                       marginTop: 12,
                       color: 'orange',
                     }}>
-                    AL FATIHAH AYAT 1 -
+                    AL A'RAF AYAT 88 -
                   </Text>
                   <Text
                     style={{
@@ -650,7 +658,7 @@ export default function Product({navigation}) {
                       color: 'orange',
                       marginBottom: 12,
                     }}>
-                    AL BAQARAH AYAT 141
+                    AL ANFAL AYAT 40
                   </Text>
                   <View
                     style={{
@@ -660,7 +668,7 @@ export default function Product({navigation}) {
                       borderRadius: 25,
                     }}>
                     <TouchableOpacity
-                      onPress={() => navigation.navigate('DetailProduct')}>
+                      onPress={() => navigation.navigate('JUZ1')}>
                       <Text
                         style={{
                           fontSize: 14,
@@ -674,10 +682,11 @@ export default function Product({navigation}) {
                   </View>
                 </View>
 
-                {/* jus 5 */}
+                {/* jus 10 */}
                 <View
                   style={{
                     width: 150,
+                    height: 200,
                     backgroundColor: 'white',
                     padding: 10,
                     border: 5,
@@ -690,8 +699,8 @@ export default function Product({navigation}) {
                       uri: 'https://www.incredible.co.za/media/catalog/product/cache/7ce9addd40d23ee411c2cc726ad5e7ed/1/0/10140077_inc_ecommerce_d533.png',
                     }}
                     style={{
-                      width: 130,
-                      height: 107,
+                      width: 60,
+                      height: 50,
                       borderColor: 'purple',
                       backgroundColor: 'purple',
                       borderRadius: 8,
@@ -700,7 +709,7 @@ export default function Product({navigation}) {
 
                   <Text
                     style={{fontSize: 14, fontWeight: 'bold', marginTop: 16}}>
-                    JUZ 1
+                    JUZ 10
                   </Text>
                   <Text
                     style={{
@@ -709,7 +718,7 @@ export default function Product({navigation}) {
                       marginTop: 12,
                       color: 'orange',
                     }}>
-                    AL FATIHAH AYAT 1 -
+                    AL ANFAL AYAT 41 -
                   </Text>
                   <Text
                     style={{
@@ -718,7 +727,7 @@ export default function Product({navigation}) {
                       color: 'orange',
                       marginBottom: 12,
                     }}>
-                    AL BAQARAH AYAT 141
+                    AT TAUBAH AYAT 92
                   </Text>
                   <View
                     style={{
@@ -728,7 +737,7 @@ export default function Product({navigation}) {
                       borderRadius: 25,
                     }}>
                     <TouchableOpacity
-                      onPress={() => navigation.navigate('DetailProduct')}>
+                      onPress={() => navigation.navigate('JUZ1')}>
                       <Text
                         style={{
                           fontSize: 14,
@@ -761,10 +770,11 @@ export default function Product({navigation}) {
                 borderRadius: 8,
               }}>
               <ScrollView horizontal={true}>
-                {/* jus 1 */}
+                {/* jus 11 */}
                 <View
                   style={{
                     width: 150,
+                    height: 200,
                     backgroundColor: 'white',
                     padding: 10,
                     border: 5,
@@ -777,8 +787,8 @@ export default function Product({navigation}) {
                       uri: 'https://www.incredible.co.za/media/catalog/product/cache/7ce9addd40d23ee411c2cc726ad5e7ed/1/0/10140077_inc_ecommerce_d533.png',
                     }}
                     style={{
-                      width: 130,
-                      height: 107,
+                      width: 60,
+                      height: 50,
                       borderColor: 'purple',
                       backgroundColor: 'purple',
                       borderRadius: 8,
@@ -787,7 +797,7 @@ export default function Product({navigation}) {
 
                   <Text
                     style={{fontSize: 14, fontWeight: 'bold', marginTop: 16}}>
-                    JUZ 1
+                    JUZ 11
                   </Text>
                   <Text
                     style={{
@@ -796,7 +806,7 @@ export default function Product({navigation}) {
                       marginTop: 12,
                       color: 'orange',
                     }}>
-                    AL FATIHAH AYAT 1 -
+                    AT TAUBAH AYAT 93 -
                   </Text>
                   <Text
                     style={{
@@ -805,7 +815,7 @@ export default function Product({navigation}) {
                       color: 'orange',
                       marginBottom: 12,
                     }}>
-                    AL BAQARAH AYAT 141
+                    HUD AYAT 5
                   </Text>
                   <View
                     style={{
@@ -815,7 +825,7 @@ export default function Product({navigation}) {
                       borderRadius: 25,
                     }}>
                     <TouchableOpacity
-                      onPress={() => navigation.navigate('DetailProduct')}>
+                      onPress={() => navigation.navigate('JUZ1')}>
                       <Text
                         style={{
                           fontSize: 14,
@@ -829,10 +839,11 @@ export default function Product({navigation}) {
                   </View>
                 </View>
 
-                {/* jus 2 */}
+                {/* jus 12 */}
                 <View
                   style={{
                     width: 150,
+                    height: 200,
                     backgroundColor: 'white',
                     padding: 10,
                     border: 5,
@@ -845,8 +856,8 @@ export default function Product({navigation}) {
                       uri: 'https://www.incredible.co.za/media/catalog/product/cache/7ce9addd40d23ee411c2cc726ad5e7ed/1/0/10140077_inc_ecommerce_d533.png',
                     }}
                     style={{
-                      width: 130,
-                      height: 107,
+                      width: 60,
+                      height: 50,
                       borderColor: 'purple',
                       backgroundColor: 'purple',
                       borderRadius: 8,
@@ -855,7 +866,7 @@ export default function Product({navigation}) {
 
                   <Text
                     style={{fontSize: 14, fontWeight: 'bold', marginTop: 16}}>
-                    JUZ 1
+                    JUZ 12
                   </Text>
                   <Text
                     style={{
@@ -864,7 +875,7 @@ export default function Product({navigation}) {
                       marginTop: 12,
                       color: 'orange',
                     }}>
-                    AL FATIHAH AYAT 1 -
+                    HUD AYAT 6 -
                   </Text>
                   <Text
                     style={{
@@ -873,7 +884,7 @@ export default function Product({navigation}) {
                       color: 'orange',
                       marginBottom: 12,
                     }}>
-                    AL BAQARAH AYAT 141
+                    YUSUF AYAT 52
                   </Text>
                   <View
                     style={{
@@ -883,7 +894,7 @@ export default function Product({navigation}) {
                       borderRadius: 25,
                     }}>
                     <TouchableOpacity
-                      onPress={() => navigation.navigate('DetailProduct')}>
+                      onPress={() => navigation.navigate('JUZ1')}>
                       <Text
                         style={{
                           fontSize: 14,
@@ -897,10 +908,11 @@ export default function Product({navigation}) {
                   </View>
                 </View>
 
-                {/* jus 3 */}
+                {/* jus 13 */}
                 <View
                   style={{
                     width: 150,
+                    height: 200,
                     backgroundColor: 'white',
                     padding: 10,
                     border: 5,
@@ -913,8 +925,8 @@ export default function Product({navigation}) {
                       uri: 'https://www.incredible.co.za/media/catalog/product/cache/7ce9addd40d23ee411c2cc726ad5e7ed/1/0/10140077_inc_ecommerce_d533.png',
                     }}
                     style={{
-                      width: 130,
-                      height: 107,
+                      width: 60,
+                      height: 50,
                       borderColor: 'purple',
                       backgroundColor: 'purple',
                       borderRadius: 8,
@@ -923,7 +935,7 @@ export default function Product({navigation}) {
 
                   <Text
                     style={{fontSize: 14, fontWeight: 'bold', marginTop: 16}}>
-                    JUZ 1
+                    JUZ 13
                   </Text>
                   <Text
                     style={{
@@ -932,7 +944,7 @@ export default function Product({navigation}) {
                       marginTop: 12,
                       color: 'orange',
                     }}>
-                    AL FATIHAH AYAT 1 -
+                    YUSUF AYAT 53 -
                   </Text>
                   <Text
                     style={{
@@ -941,7 +953,7 @@ export default function Product({navigation}) {
                       color: 'orange',
                       marginBottom: 12,
                     }}>
-                    AL BAQARAH AYAT 141
+                    IBRAHIM AYAT 52
                   </Text>
                   <View
                     style={{
@@ -951,7 +963,7 @@ export default function Product({navigation}) {
                       borderRadius: 25,
                     }}>
                     <TouchableOpacity
-                      onPress={() => navigation.navigate('DetailProduct')}>
+                      onPress={() => navigation.navigate('JUZ1')}>
                       <Text
                         style={{
                           fontSize: 14,
@@ -965,10 +977,11 @@ export default function Product({navigation}) {
                   </View>
                 </View>
 
-                {/* jus 4 */}
+                {/* jus 14 */}
                 <View
                   style={{
                     width: 150,
+                    height: 200,
                     backgroundColor: 'white',
                     padding: 10,
                     border: 5,
@@ -981,8 +994,8 @@ export default function Product({navigation}) {
                       uri: 'https://www.incredible.co.za/media/catalog/product/cache/7ce9addd40d23ee411c2cc726ad5e7ed/1/0/10140077_inc_ecommerce_d533.png',
                     }}
                     style={{
-                      width: 130,
-                      height: 107,
+                      width: 60,
+                      height: 50,
                       borderColor: 'purple',
                       backgroundColor: 'purple',
                       borderRadius: 8,
@@ -991,7 +1004,7 @@ export default function Product({navigation}) {
 
                   <Text
                     style={{fontSize: 14, fontWeight: 'bold', marginTop: 16}}>
-                    JUZ 1
+                    JUZ 14
                   </Text>
                   <Text
                     style={{
@@ -1000,7 +1013,7 @@ export default function Product({navigation}) {
                       marginTop: 12,
                       color: 'orange',
                     }}>
-                    AL FATIHAH AYAT 1 -
+                    AL HIJR AYAT 1 -
                   </Text>
                   <Text
                     style={{
@@ -1009,7 +1022,7 @@ export default function Product({navigation}) {
                       color: 'orange',
                       marginBottom: 12,
                     }}>
-                    AL BAQARAH AYAT 141
+                    AL NAHL AYAT 128
                   </Text>
                   <View
                     style={{
@@ -1019,7 +1032,7 @@ export default function Product({navigation}) {
                       borderRadius: 25,
                     }}>
                     <TouchableOpacity
-                      onPress={() => navigation.navigate('DetailProduct')}>
+                      onPress={() => navigation.navigate('JUZ1')}>
                       <Text
                         style={{
                           fontSize: 14,
@@ -1033,24 +1046,26 @@ export default function Product({navigation}) {
                   </View>
                 </View>
 
-                {/* jus 5 */}
+                {/* jus 15 */}
                 <View
                   style={{
                     width: 150,
+                    height: 200,
                     backgroundColor: 'white',
                     padding: 10,
                     border: 5,
                     borderColor: 'purple',
                     borderRadius: 8,
                     margin: 5,
+                    marginBottom: 45,
                   }}>
                   <Image
                     source={{
                       uri: 'https://www.incredible.co.za/media/catalog/product/cache/7ce9addd40d23ee411c2cc726ad5e7ed/1/0/10140077_inc_ecommerce_d533.png',
                     }}
                     style={{
-                      width: 130,
-                      height: 107,
+                      width: 60,
+                      height: 50,
                       borderColor: 'purple',
                       backgroundColor: 'purple',
                       borderRadius: 8,
@@ -1059,7 +1074,7 @@ export default function Product({navigation}) {
 
                   <Text
                     style={{fontSize: 14, fontWeight: 'bold', marginTop: 16}}>
-                    JUZ 1
+                    JUZ 15
                   </Text>
                   <Text
                     style={{
@@ -1068,7 +1083,7 @@ export default function Product({navigation}) {
                       marginTop: 12,
                       color: 'orange',
                     }}>
-                    AL FATIHAH AYAT 1 -
+                    AL ISRA' AYAT 1 -
                   </Text>
                   <Text
                     style={{
@@ -1077,7 +1092,7 @@ export default function Product({navigation}) {
                       color: 'orange',
                       marginBottom: 12,
                     }}>
-                    AL BAQARAH AYAT 141
+                    AL KAHFI AYAT 74
                   </Text>
                   <View
                     style={{
@@ -1087,7 +1102,7 @@ export default function Product({navigation}) {
                       borderRadius: 25,
                     }}>
                     <TouchableOpacity
-                      onPress={() => navigation.navigate('DetailProduct')}>
+                      onPress={() => navigation.navigate('JUZ1')}>
                       <Text
                         style={{
                           fontSize: 14,
@@ -1105,6 +1120,9 @@ export default function Product({navigation}) {
           </ScrollView>
         </View>
         {/* Akhir View 3 */}
+
+        {/* View 4 */}
+        {/* akhir View 4 */}
       </ScrollView>
     </View>
   );

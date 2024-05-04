@@ -24,14 +24,16 @@
 
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
-import Setting from './screens/Setting';
+import More from './screens/More';
 import Surah from './screens/Surah';
 import JUZ from './screens/JUZ';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import DetailProduct from './screens/DetailProduct';
+import Detail from './screens/pages/Detail';
+import JUZ1 from './screens/pages/JUZ1';
+import DetailSurah1 from './screens/pages/DetailSurah1';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -50,7 +52,9 @@ function App() {
           component={JUZ}
           options={{headerShown: false}}
         />
-        <Stack.Screen name="DetailProduct" component={DetailProduct} />
+        <Stack.Screen name="Detail" component={Detail} />
+        <Stack.Screen name="JUZ1" component={JUZ1} />
+        <Stack.Screen name="DetailSurah1" component={DetailSurah1} />
       </Stack.Navigator>
     </NavigationContainer>
   );
@@ -84,8 +88,8 @@ function MainTab() {
       />
       <Tab.Screen name="JUZ" component={JUZ} options={{headerShown: false}} />
       <Tab.Screen
-        name="SETTING"
-        component={Setting}
+        name="LAINNYA"
+        component={More}
         options={{headerShown: false}}
       />
     </Tab.Navigator>
