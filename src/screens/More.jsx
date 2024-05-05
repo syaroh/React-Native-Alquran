@@ -1,6 +1,14 @@
-import {StyleSheet, Text, View, Image, ScrollView} from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  View,
+  Image,
+  ScrollView,
+  TouchableOpacity,
+} from 'react-native';
 import React from 'react';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
 const More = () => {
   return (
@@ -9,15 +17,16 @@ const More = () => {
         marginHorizontal: 15,
         marginTop: 2,
         borderRadius: 20,
+        backgroundColor: '#da81da92',
       }}>
       <View
         style={{
-          height: 100,
+          height: 150,
           flexDirection: 'row',
           alignItems: 'center',
-          marginTop: 20,
-          marginBottom: 15,
-          backgroundColor: '#da81da92',
+          marginBottom: 5,
+          backgroundColor: 'white',
+          borderRadius: 4,
         }}>
         <View
           style={{
@@ -32,27 +41,49 @@ const More = () => {
         />
         <View>
           <Text style={styles.judul}>Al Quran 30 Juz</Text>
-          <Text>Ofline</Text>
+          <Text style={{color: 'black'}}>Offline</Text>
         </View>
       </View>
 
-      <View style={{borderBottomWidth: 3, borderColor: '#da81da92'}}>
+      {/* Menu 1 */}
+
+      <View style={styles.viewMenu}>
         <Text style={styles.menu}>Opsi Lain</Text>
-        <Text style={styles.submenu}>Doa Doa Harian</Text>
-        <Text style={styles.submenu}>Al Quran MP3</Text>
-        <Text style={styles.submenu}>Asmaul Husna</Text>
+
+        <TouchableOpacity style={styles.tombol}>
+          <Ionicons name="newspaper-outline" style={styles.icon} />
+          <Text style={styles.submenu}>Doa Doa Harian</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.tombol}>
+          <Ionicons name="musical-note-outline" style={styles.icon} />
+          <Text style={styles.submenu}>Al Quran MP3</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.tombol}>
+          <Ionicons name="sparkles-outline" style={styles.icon} />
+          <Text style={styles.submenu}>Asmaul Husna</Text>
+        </TouchableOpacity>
       </View>
 
-      <View
-        style={{marginTop: 15, borderBottomWidth: 3, borderColor: '#da81da92'}}>
+      {/* Akhir Menu 1 */}
+
+      {/* Menu 2 */}
+      <View style={styles.viewMenu}>
         <Text style={styles.menu}>Umum</Text>
-        <View style={{flexDirection: 'row'}}>
-          <Ionicons name="alert-circle" style={{fontSize: 25}} />
-          <Text style={styles.submenu}>Info Aplikasi</Text>
-        </View>
 
-        <Text style={styles.submenu}>Bagikan</Text>
+        <TouchableOpacity style={{flexDirection: 'row'}}>
+          <Ionicons name="alert-circle-outline" style={styles.icon} />
+          <Text style={styles.submenu}>Info Aplikasi</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={{flexDirection: 'row'}}>
+          <Ionicons name="share-social-outline" style={styles.icon} />
+          <Text style={styles.submenu}>Bagikan</Text>
+        </TouchableOpacity>
       </View>
+
+      {/*Akhir Menu 2  */}
     </View>
   );
 };
@@ -63,24 +94,43 @@ const styles = StyleSheet.create({
   judul: {
     fontSize: 20,
     fontWeight: 'bold',
-    color: 'black',
+    color: 'purple',
+  },
+
+  viewMenu: {
+    borderBottomWidth: 3,
+    borderColor: 'white',
+    borderRadius: 4,
+    marginTop: 10,
   },
 
   menu: {
     fontSize: 20,
     fontWeight: 'bold',
     color: 'black',
-    marginBottom: 5,
+    marginBottom: 10,
     marginLeft: 15,
   },
 
   submenu: {
     fontSize: 16,
-    fontWeight: '600',
+    fontWeight: '700',
     color: 'black',
-    margin: 5,
-    marginLeft: 50,
-    marginBottom: 10,
+    margin: 10,
+    marginTop: 10,
+    marginLeft: 10,
+    marginBottom: 20,
     flexDirection: 'row',
+  },
+
+  tombol: {
+    flexDirection: 'row',
+  },
+
+  icon: {
+    fontSize: 25,
+    marginLeft: 20,
+    marginTop: 8,
+    color: 'purple',
   },
 });

@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 import React from 'react';
 import DetailSurah1 from './pages/DetailSurah1';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const Surah = ({navigation}) => (
   <View
@@ -20,14 +21,25 @@ const Surah = ({navigation}) => (
     }}>
     <View
       style={{
-        height: 35,
+        height: 40,
         backgroundColor: 'white',
-        justifyContent: 'center',
         alignItems: 'center',
+        flexDirection: 'row',
       }}>
-      <Text style={{backgroundColor: 'white', fontSize: 20}}>
+      <Text style={{backgroundColor: 'white', fontSize: 20, color: 'purple'}}>
         SURAH AL QURAN
       </Text>
+      <TouchableOpacity style={{}} onPress={() => navigation.navigate('JUZ1')}>
+        <Ionicons
+          name="search"
+          style={{
+            fontSize: 30,
+            marginHorizontal: 130,
+            color: 'white',
+            backgroundColor: 'purple',
+          }}
+        />
+      </TouchableOpacity>
     </View>
 
     <View>

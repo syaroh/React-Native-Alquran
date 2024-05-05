@@ -17,10 +17,11 @@ export default function JUZ({navigation}) {
       <View
         style={{
           height: 40,
-          backgroundColor: '#da81da92',
+          backgroundColor: 'white',
           margin: 5,
-          marginBottom: 0,
+          marginBottom: 5,
           marginLeft: 4,
+          marginTop: 20,
           borderRadius: 5,
           justifyContent: 'center',
           alignItems: 'center',
@@ -31,347 +32,66 @@ export default function JUZ({navigation}) {
         {/* View 1 */}
         <View>
           <ScrollView horizontal={true}>
-            <View
-              style={{
-                width: 810,
-                margin: 5,
-                backgroundColor: '#da81da92',
-                padding: 5,
-                border: 5,
-                borderColor: 'purple',
-                borderRadius: 8,
-              }}>
+            <View style={styles.kotakBesar}>
               <ScrollView horizontal={true}>
                 {/* jus 1 */}
-                <View
-                  style={{
-                    width: 150,
-                    height: 200,
-                    backgroundColor: 'white',
-                    padding: 10,
-                    border: 5,
-                    borderColor: 'purple',
-                    borderRadius: 8,
-                    margin: 5,
-                  }}>
-                  <Image
-                    source={{
-                      uri: 'https://www.incredible.co.za/media/catalog/product/cache/7ce9addd40d23ee411c2cc726ad5e7ed/1/0/10140077_inc_ecommerce_d533.png',
-                    }}
-                    style={{
-                      width: 60,
-                      height: 50,
-                      borderColor: 'purple',
-                      backgroundColor: 'purple',
-                      borderRadius: 8,
-                    }}
-                  />
-
-                  <Text
-                    style={{fontSize: 14, fontWeight: 'bold', marginTop: 16}}>
-                    JUZ 1
-                  </Text>
-                  <Text
-                    style={{
-                      fontSize: 12,
-                      fontWeight: 'bold',
-                      marginTop: 12,
-                      color: 'orange',
-                    }}>
-                    AL FATIHAH AYAT 1 -
-                  </Text>
-                  <Text
-                    style={{
-                      fontSize: 12,
-                      fontWeight: 'bold',
-                      color: 'orange',
-                      marginBottom: 12,
-                    }}>
-                    AL BAQARAH AYAT 141
-                  </Text>
-                  <View
-                    style={{
-                      backgroundColor: 'purple',
-                      marginTop: 6,
-                      paddingBottom: 6,
-                      borderRadius: 25,
-                    }}>
+                <View style={styles.kotakJuz}>
+                  <Text style={styles.angkaJuz}>JUZ 1</Text>
+                  <Text style={styles.surah1}>AL FATIHAH AYAT 1 -</Text>
+                  <Text style={styles.surah2}>AL BAQARAH AYAT 141</Text>
+                  <View style={styles.tombolBaca}>
                     <TouchableOpacity
                       onPress={() => navigation.navigate('JUZ1')}>
-                      <Text
-                        style={{
-                          fontSize: 14,
-                          fontWeight: '600',
-                          color: 'white',
-                          textAlign: 'center',
-                        }}>
-                        BACA
-                      </Text>
+                      <Text style={styles.baca}>BACA</Text>
                     </TouchableOpacity>
                   </View>
                 </View>
 
                 {/* jus 2 */}
-                <View
-                  style={{
-                    width: 150,
-                    height: 200,
-                    backgroundColor: 'white',
-                    padding: 10,
-                    border: 5,
-                    borderColor: 'purple',
-                    borderRadius: 8,
-                    margin: 5,
-                  }}>
-                  <Image
-                    source={{
-                      uri: 'https://www.incredible.co.za/media/catalog/product/cache/7ce9addd40d23ee411c2cc726ad5e7ed/1/0/10140077_inc_ecommerce_d533.png',
-                    }}
-                    style={{
-                      width: 60,
-                      height: 50,
-                      borderColor: 'purple',
-                      backgroundColor: 'purple',
-                      borderRadius: 8,
-                    }}
-                  />
-
-                  <Text
-                    style={{fontSize: 14, fontWeight: 'bold', marginTop: 16}}>
-                    JUZ 2
-                  </Text>
-                  <Text
-                    style={{
-                      fontSize: 12,
-                      fontWeight: 'bold',
-                      marginTop: 12,
-                      color: 'orange',
-                    }}>
-                    AL BAQARAH AYAT 142-
-                  </Text>
-                  <Text
-                    style={{
-                      fontSize: 12,
-                      fontWeight: 'bold',
-                      color: 'orange',
-                      marginBottom: 12,
-                    }}>
-                    AL BAQARAH AYAT 252
-                  </Text>
-                  <View
-                    style={{
-                      backgroundColor: 'purple',
-                      marginTop: 6,
-                      paddingBottom: 6,
-                      borderRadius: 25,
-                    }}>
+                <View style={styles.kotakJuz}>
+                  <Text style={styles.angkaJuz}>JUZ 2</Text>
+                  <Text style={styles.surah1}>AL BAQARAH AYAT 142-</Text>
+                  <Text style={styles.surah2}>AL BAQARAH AYAT 252</Text>
+                  <View style={styles.tombolBaca}>
                     <TouchableOpacity
                       onPress={() => navigation.navigate('JUZ1')}>
-                      <Text
-                        style={{
-                          fontSize: 14,
-                          fontWeight: '600',
-                          color: 'white',
-                          textAlign: 'center',
-                        }}>
-                        BACA
-                      </Text>
+                      <Text style={styles.baca}>BACA</Text>
                     </TouchableOpacity>
                   </View>
                 </View>
 
                 {/* jus 3 */}
-                <View
-                  style={{
-                    width: 150,
-                    height: 200,
-                    backgroundColor: 'white',
-                    padding: 10,
-                    border: 5,
-                    borderColor: 'purple',
-                    borderRadius: 8,
-                    margin: 5,
-                  }}>
-                  <Image
-                    source={{
-                      uri: 'https://www.incredible.co.za/media/catalog/product/cache/7ce9addd40d23ee411c2cc726ad5e7ed/1/0/10140077_inc_ecommerce_d533.png',
-                    }}
-                    style={{
-                      width: 60,
-                      height: 50,
-                      borderColor: 'purple',
-                      backgroundColor: 'purple',
-                      borderRadius: 8,
-                    }}
-                  />
-
-                  <Text
-                    style={{fontSize: 14, fontWeight: 'bold', marginTop: 16}}>
-                    JUZ 3
-                  </Text>
-                  <Text
-                    style={{
-                      fontSize: 12,
-                      fontWeight: 'bold',
-                      marginTop: 12,
-                      color: 'orange',
-                    }}>
-                    AL BAQARAH AYAT 253-
-                  </Text>
-                  <Text
-                    style={{
-                      fontSize: 12,
-                      fontWeight: 'bold',
-                      color: 'orange',
-                      marginBottom: 12,
-                    }}>
-                    ALI - IMRAN AYAT 92
-                  </Text>
-                  <View
-                    style={{
-                      backgroundColor: 'purple',
-                      marginTop: 6,
-                      paddingBottom: 6,
-                      borderRadius: 25,
-                    }}>
+                <View style={styles.kotakJuz}>
+                  <Text style={styles.angkaJuz}>JUZ 3</Text>
+                  <Text style={styles.surah1}>AL BAQARAH AYAT 253-</Text>
+                  <Text style={styles.surah2}>ALI - IMRAN AYAT 92</Text>
+                  <View style={styles.tombolBaca}>
                     <TouchableOpacity
                       onPress={() => navigation.navigate('JUZ1')}>
-                      <Text
-                        style={{
-                          fontSize: 14,
-                          fontWeight: '600',
-                          color: 'white',
-                          textAlign: 'center',
-                        }}>
-                        BACA
-                      </Text>
+                      <Text style={styles.baca}>BACA</Text>
                     </TouchableOpacity>
                   </View>
                 </View>
 
                 {/* jus 4 */}
-                <View
-                  style={{
-                    width: 150,
-                    height: 200,
-                    backgroundColor: 'white',
-                    padding: 10,
-                    border: 5,
-                    borderColor: 'purple',
-                    borderRadius: 8,
-                    margin: 5,
-                  }}>
-                  <Image
-                    source={{
-                      uri: 'https://www.incredible.co.za/media/catalog/product/cache/7ce9addd40d23ee411c2cc726ad5e7ed/1/0/10140077_inc_ecommerce_d533.png',
-                    }}
-                    style={{
-                      width: 60,
-                      height: 50,
-                      borderColor: 'purple',
-                      backgroundColor: 'purple',
-                      borderRadius: 8,
-                    }}
-                  />
-
-                  <Text
-                    style={{fontSize: 14, fontWeight: 'bold', marginTop: 16}}>
-                    JUZ 4
-                  </Text>
-                  <Text
-                    style={{
-                      fontSize: 12,
-                      fontWeight: 'bold',
-                      marginTop: 12,
-                      color: 'orange',
-                    }}>
-                    ALI IMRAN AYAT 93 -
-                  </Text>
-                  <Text
-                    style={{
-                      fontSize: 12,
-                      fontWeight: 'bold',
-                      color: 'orange',
-                      marginBottom: 12,
-                    }}>
-                    AN NISA' AYAT 23
-                  </Text>
-                  <View
-                    style={{
-                      backgroundColor: 'purple',
-                      marginTop: 6,
-                      paddingBottom: 6,
-                      borderRadius: 25,
-                    }}>
+                <View style={styles.kotakJuz}>
+                  <Text style={styles.angkaJuz}>JUZ 4</Text>
+                  <Text style={styles.surah1}>ALI IMRAN AYAT 93 -</Text>
+                  <Text style={styles.surah2}>AN NISA' AYAT 23</Text>
+                  <View style={styles.tombolBaca}>
                     <TouchableOpacity
                       onPress={() => navigation.navigate('JUZ1')}>
-                      <Text
-                        style={{
-                          fontSize: 14,
-                          fontWeight: '600',
-                          color: 'white',
-                          textAlign: 'center',
-                        }}>
-                        BACA
-                      </Text>
+                      <Text style={styles.baca}>BACA</Text>
                     </TouchableOpacity>
                   </View>
                 </View>
 
                 {/* jus 5 */}
-                <View
-                  style={{
-                    width: 150,
-                    height: 200,
-                    backgroundColor: 'white',
-                    padding: 10,
-                    border: 5,
-                    borderColor: 'purple',
-                    borderRadius: 8,
-                    margin: 5,
-                  }}>
-                  <Image
-                    source={{
-                      uri: 'https://www.incredible.co.za/media/catalog/product/cache/7ce9addd40d23ee411c2cc726ad5e7ed/1/0/10140077_inc_ecommerce_d533.png',
-                    }}
-                    style={{
-                      width: 60,
-                      height: 50,
-                      borderColor: 'purple',
-                      backgroundColor: 'purple',
-                      borderRadius: 8,
-                    }}
-                  />
-
-                  <Text
-                    style={{fontSize: 14, fontWeight: 'bold', marginTop: 16}}>
-                    JUZ 5
-                  </Text>
-                  <Text
-                    style={{
-                      fontSize: 12,
-                      fontWeight: 'bold',
-                      marginTop: 12,
-                      color: 'orange',
-                    }}>
-                    AN NISA' AYAT 24 -
-                  </Text>
-                  <Text
-                    style={{
-                      fontSize: 12,
-                      fontWeight: 'bold',
-                      color: 'orange',
-                      marginBottom: 12,
-                    }}>
-                    AN NISA' AYAT 147
-                  </Text>
-                  <View
-                    style={{
-                      backgroundColor: 'purple',
-                      marginTop: 6,
-                      paddingBottom: 6,
-                      borderRadius: 25,
-                    }}>
+                <View style={styles.kotakJuz}>
+                  <Text style={styles.angkaJuz}>JUZ 5</Text>
+                  <Text style={styles.surah1}>AN NISA' AYAT 24 -</Text>
+                  <Text style={styles.surah2}>AN NISA' AYAT 147</Text>
+                  <View style={styles.tombolBaca}>
                     <TouchableOpacity
                       onPress={() => navigation.navigate('JUZ1')}>
                       <Text
@@ -395,358 +115,69 @@ export default function JUZ({navigation}) {
         {/* View 2 */}
         <View>
           <ScrollView horizontal={true}>
-            <View
-              style={{
-                width: 810,
-                margin: 5,
-                backgroundColor: '#da81da92',
-                padding: 5,
-                border: 5,
-                borderColor: 'purple',
-                borderRadius: 8,
-              }}>
+            <View style={styles.kotakBesar}>
               <ScrollView horizontal={true}>
                 {/* jus 6 */}
-                <View
-                  style={{
-                    width: 150,
-                    height: 200,
-                    backgroundColor: 'white',
-                    padding: 10,
-                    border: 5,
-                    borderColor: 'purple',
-                    borderRadius: 8,
-                    margin: 5,
-                  }}>
-                  <Image
-                    source={{
-                      uri: 'https://www.incredible.co.za/media/catalog/product/cache/7ce9addd40d23ee411c2cc726ad5e7ed/1/0/10140077_inc_ecommerce_d533.png',
-                    }}
-                    style={{
-                      width: 60,
-                      height: 50,
-                      borderColor: 'purple',
-                      backgroundColor: 'purple',
-                      borderRadius: 8,
-                    }}
-                  />
-
-                  <Text
-                    style={{fontSize: 14, fontWeight: 'bold', marginTop: 16}}>
-                    JUZ 6
-                  </Text>
-                  <Text
-                    style={{
-                      fontSize: 12,
-                      fontWeight: 'bold',
-                      marginTop: 12,
-                      color: 'orange',
-                    }}>
-                    AN NISA' AYAT 148 -
-                  </Text>
-                  <Text
-                    style={{
-                      fontSize: 12,
-                      fontWeight: 'bold',
-                      color: 'orange',
-                      marginBottom: 12,
-                    }}>
-                    AL MAIDAH AYAT 81
-                  </Text>
-                  <View
-                    style={{
-                      backgroundColor: 'purple',
-                      marginTop: 6,
-                      paddingBottom: 6,
-                      borderRadius: 25,
-                    }}>
+                <View style={styles.kotakJuz}>
+                  <Text style={styles.angkaJuz}>JUZ 6</Text>
+                  <Text style={styles.surah1}>AN NISA' AYAT 148 -</Text>
+                  <Text style={styles.surah2}>AL MAIDAH AYAT 81</Text>
+                  <View style={styles.tombolBaca}>
                     <TouchableOpacity
                       onPress={() => navigation.navigate('JUZ1')}>
-                      <Text
-                        style={{
-                          fontSize: 14,
-                          fontWeight: '600',
-                          color: 'white',
-                          textAlign: 'center',
-                        }}>
-                        BACA
-                      </Text>
+                      <Text style={styles.baca}>BACA</Text>
                     </TouchableOpacity>
                   </View>
                 </View>
 
                 {/* jus 7 */}
-                <View
-                  style={{
-                    width: 150,
-                    height: 200,
-                    backgroundColor: 'white',
-                    padding: 10,
-                    border: 5,
-                    borderColor: 'purple',
-                    borderRadius: 8,
-                    margin: 5,
-                  }}>
-                  <Image
-                    source={{
-                      uri: 'https://www.incredible.co.za/media/catalog/product/cache/7ce9addd40d23ee411c2cc726ad5e7ed/1/0/10140077_inc_ecommerce_d533.png',
-                    }}
-                    style={{
-                      width: 60,
-                      height: 50,
-                      borderColor: 'purple',
-                      backgroundColor: 'purple',
-                      borderRadius: 8,
-                    }}
-                  />
-
-                  <Text
-                    style={{fontSize: 14, fontWeight: 'bold', marginTop: 16}}>
-                    JUZ 7
-                  </Text>
-                  <Text
-                    style={{
-                      fontSize: 12,
-                      fontWeight: 'bold',
-                      marginTop: 12,
-                      color: 'orange',
-                    }}>
-                    AL MAIDAH AYAT 82 -
-                  </Text>
-                  <Text
-                    style={{
-                      fontSize: 12,
-                      fontWeight: 'bold',
-                      color: 'orange',
-                      marginBottom: 12,
-                    }}>
-                    AL AN'AM AYAT 110
-                  </Text>
-                  <View
-                    style={{
-                      backgroundColor: 'purple',
-                      marginTop: 6,
-                      paddingBottom: 6,
-                      borderRadius: 25,
-                    }}>
+                <View style={styles.kotakJuz}>
+                  <Text style={styles.angkaJuz}>JUZ 7</Text>
+                  <Text style={styles.surah1}>AL MAIDAH AYAT 82 -</Text>
+                  <Text style={styles.surah2}>AL AN'AM AYAT 110</Text>
+                  <View style={styles.tombolBaca}>
                     <TouchableOpacity
                       onPress={() => navigation.navigate('JUZ1')}>
-                      <Text
-                        style={{
-                          fontSize: 14,
-                          fontWeight: '600',
-                          color: 'white',
-                          textAlign: 'center',
-                        }}>
-                        BACA
-                      </Text>
+                      <Text style={styles.baca}>BACA</Text>
                     </TouchableOpacity>
                   </View>
                 </View>
 
                 {/* jus 8 */}
-                <View
-                  style={{
-                    width: 150,
-                    height: 200,
-                    backgroundColor: 'white',
-                    padding: 10,
-                    border: 5,
-                    borderColor: 'purple',
-                    borderRadius: 8,
-                    margin: 5,
-                  }}>
-                  <Image
-                    source={{
-                      uri: 'https://www.incredible.co.za/media/catalog/product/cache/7ce9addd40d23ee411c2cc726ad5e7ed/1/0/10140077_inc_ecommerce_d533.png',
-                    }}
-                    style={{
-                      width: 60,
-                      height: 50,
-                      borderColor: 'purple',
-                      backgroundColor: 'purple',
-                      borderRadius: 8,
-                    }}
-                  />
-
-                  <Text
-                    style={{fontSize: 14, fontWeight: 'bold', marginTop: 16}}>
-                    JUZ 8
-                  </Text>
-                  <Text
-                    style={{
-                      fontSize: 12,
-                      fontWeight: 'bold',
-                      marginTop: 12,
-                      color: 'orange',
-                    }}>
-                    AL AN'AM AYAT 111 -
-                  </Text>
-                  <Text
-                    style={{
-                      fontSize: 12,
-                      fontWeight: 'bold',
-                      color: 'orange',
-                      marginBottom: 12,
-                    }}>
-                    AL A'RAF AYAT 87
-                  </Text>
-                  <View
-                    style={{
-                      backgroundColor: 'purple',
-                      marginTop: 6,
-                      paddingBottom: 6,
-                      borderRadius: 25,
-                    }}>
+                <View style={styles.kotakJuz}>
+                  <Text style={styles.angkaJuz}>JUZ 8</Text>
+                  <Text style={styles.surah1}>AL AN'AM AYAT 111 -</Text>
+                  <Text style={styles.surah2}>AL A'RAF AYAT 87</Text>
+                  <View style={styles.tombolBaca}>
                     <TouchableOpacity
                       onPress={() => navigation.navigate('JUZ1')}>
-                      <Text
-                        style={{
-                          fontSize: 14,
-                          fontWeight: '600',
-                          color: 'white',
-                          textAlign: 'center',
-                        }}>
-                        BACA
-                      </Text>
+                      <Text style={styles.baca}>BACA</Text>
                     </TouchableOpacity>
                   </View>
                 </View>
 
                 {/* jus 9 */}
-                <View
-                  style={{
-                    width: 150,
-                    height: 200,
-                    backgroundColor: 'white',
-                    padding: 10,
-                    border: 5,
-                    borderColor: 'purple',
-                    borderRadius: 8,
-                    margin: 5,
-                  }}>
-                  <Image
-                    source={{
-                      uri: 'https://www.incredible.co.za/media/catalog/product/cache/7ce9addd40d23ee411c2cc726ad5e7ed/1/0/10140077_inc_ecommerce_d533.png',
-                    }}
-                    style={{
-                      width: 60,
-                      height: 50,
-                      borderColor: 'purple',
-                      backgroundColor: 'purple',
-                      borderRadius: 8,
-                    }}
-                  />
-
-                  <Text
-                    style={{fontSize: 14, fontWeight: 'bold', marginTop: 16}}>
-                    JUZ 9
-                  </Text>
-                  <Text
-                    style={{
-                      fontSize: 12,
-                      fontWeight: 'bold',
-                      marginTop: 12,
-                      color: 'orange',
-                    }}>
-                    AL A'RAF AYAT 88 -
-                  </Text>
-                  <Text
-                    style={{
-                      fontSize: 12,
-                      fontWeight: 'bold',
-                      color: 'orange',
-                      marginBottom: 12,
-                    }}>
-                    AL ANFAL AYAT 40
-                  </Text>
-                  <View
-                    style={{
-                      backgroundColor: 'purple',
-                      marginTop: 6,
-                      paddingBottom: 6,
-                      borderRadius: 25,
-                    }}>
+                <View style={styles.kotakJuz}>
+                  <Text style={styles.angkaJuz}>JUZ 9</Text>
+                  <Text style={styles.surah1}>AL A'RAF AYAT 88 -</Text>
+                  <Text style={styles.surah2}>AL ANFAL AYAT 40</Text>
+                  <View style={styles.tombolBaca}>
                     <TouchableOpacity
                       onPress={() => navigation.navigate('JUZ1')}>
-                      <Text
-                        style={{
-                          fontSize: 14,
-                          fontWeight: '600',
-                          color: 'white',
-                          textAlign: 'center',
-                        }}>
-                        BACA
-                      </Text>
+                      <Text style={styles.baca}>BACA</Text>
                     </TouchableOpacity>
                   </View>
                 </View>
 
                 {/* jus 10 */}
-                <View
-                  style={{
-                    width: 150,
-                    height: 200,
-                    backgroundColor: 'white',
-                    padding: 10,
-                    border: 5,
-                    borderColor: 'purple',
-                    borderRadius: 8,
-                    margin: 5,
-                  }}>
-                  <Image
-                    source={{
-                      uri: 'https://www.incredible.co.za/media/catalog/product/cache/7ce9addd40d23ee411c2cc726ad5e7ed/1/0/10140077_inc_ecommerce_d533.png',
-                    }}
-                    style={{
-                      width: 60,
-                      height: 50,
-                      borderColor: 'purple',
-                      backgroundColor: 'purple',
-                      borderRadius: 8,
-                    }}
-                  />
-
-                  <Text
-                    style={{fontSize: 14, fontWeight: 'bold', marginTop: 16}}>
-                    JUZ 10
-                  </Text>
-                  <Text
-                    style={{
-                      fontSize: 12,
-                      fontWeight: 'bold',
-                      marginTop: 12,
-                      color: 'orange',
-                    }}>
-                    AL ANFAL AYAT 41 -
-                  </Text>
-                  <Text
-                    style={{
-                      fontSize: 12,
-                      fontWeight: 'bold',
-                      color: 'orange',
-                      marginBottom: 12,
-                    }}>
-                    AT TAUBAH AYAT 92
-                  </Text>
-                  <View
-                    style={{
-                      backgroundColor: 'purple',
-                      marginTop: 6,
-                      paddingBottom: 6,
-                      borderRadius: 25,
-                    }}>
+                <View style={styles.kotakJuz}>
+                  <Text style={styles.angkaJuz}>JUZ 10</Text>
+                  <Text style={styles.surah1}>AL ANFAL AYAT 41 -</Text>
+                  <Text style={styles.surah2}>AT TAUBAH AYAT 92</Text>
+                  <View style={styles.tombolBaca}>
                     <TouchableOpacity
                       onPress={() => navigation.navigate('JUZ1')}>
-                      <Text
-                        style={{
-                          fontSize: 14,
-                          fontWeight: '600',
-                          color: 'white',
-                          textAlign: 'center',
-                        }}>
-                        BACA
-                      </Text>
+                      <Text style={styles.baca}>BACA</Text>
                     </TouchableOpacity>
                   </View>
                 </View>
@@ -759,359 +190,69 @@ export default function JUZ({navigation}) {
         {/* view 3 */}
         <View>
           <ScrollView horizontal={true}>
-            <View
-              style={{
-                width: 810,
-                margin: 5,
-                backgroundColor: '#da81da92',
-                padding: 5,
-                border: 5,
-                borderColor: 'purple',
-                borderRadius: 8,
-              }}>
+            <View style={styles.kotakBesar}>
               <ScrollView horizontal={true}>
                 {/* jus 11 */}
-                <View
-                  style={{
-                    width: 150,
-                    height: 200,
-                    backgroundColor: 'white',
-                    padding: 10,
-                    border: 5,
-                    borderColor: 'purple',
-                    borderRadius: 8,
-                    margin: 5,
-                  }}>
-                  <Image
-                    source={{
-                      uri: 'https://www.incredible.co.za/media/catalog/product/cache/7ce9addd40d23ee411c2cc726ad5e7ed/1/0/10140077_inc_ecommerce_d533.png',
-                    }}
-                    style={{
-                      width: 60,
-                      height: 50,
-                      borderColor: 'purple',
-                      backgroundColor: 'purple',
-                      borderRadius: 8,
-                    }}
-                  />
-
-                  <Text
-                    style={{fontSize: 14, fontWeight: 'bold', marginTop: 16}}>
-                    JUZ 11
-                  </Text>
-                  <Text
-                    style={{
-                      fontSize: 12,
-                      fontWeight: 'bold',
-                      marginTop: 12,
-                      color: 'orange',
-                    }}>
-                    AT TAUBAH AYAT 93 -
-                  </Text>
-                  <Text
-                    style={{
-                      fontSize: 12,
-                      fontWeight: 'bold',
-                      color: 'orange',
-                      marginBottom: 12,
-                    }}>
-                    HUD AYAT 5
-                  </Text>
-                  <View
-                    style={{
-                      backgroundColor: 'purple',
-                      marginTop: 6,
-                      paddingBottom: 6,
-                      borderRadius: 25,
-                    }}>
+                <View style={styles.kotakJuz}>
+                  <Text style={styles.angkaJuz}>JUZ 11</Text>
+                  <Text style={styles.surah1}>AT TAUBAH AYAT 93 -</Text>
+                  <Text style={styles.surah2}>HUD AYAT 5</Text>
+                  <View style={styles.tombolBaca}>
                     <TouchableOpacity
                       onPress={() => navigation.navigate('JUZ1')}>
-                      <Text
-                        style={{
-                          fontSize: 14,
-                          fontWeight: '600',
-                          color: 'white',
-                          textAlign: 'center',
-                        }}>
-                        BACA
-                      </Text>
+                      <Text style={styles.baca}>BACA</Text>
                     </TouchableOpacity>
                   </View>
                 </View>
 
                 {/* jus 12 */}
-                <View
-                  style={{
-                    width: 150,
-                    height: 200,
-                    backgroundColor: 'white',
-                    padding: 10,
-                    border: 5,
-                    borderColor: 'purple',
-                    borderRadius: 8,
-                    margin: 5,
-                  }}>
-                  <Image
-                    source={{
-                      uri: 'https://www.incredible.co.za/media/catalog/product/cache/7ce9addd40d23ee411c2cc726ad5e7ed/1/0/10140077_inc_ecommerce_d533.png',
-                    }}
-                    style={{
-                      width: 60,
-                      height: 50,
-                      borderColor: 'purple',
-                      backgroundColor: 'purple',
-                      borderRadius: 8,
-                    }}
-                  />
-
-                  <Text
-                    style={{fontSize: 14, fontWeight: 'bold', marginTop: 16}}>
-                    JUZ 12
-                  </Text>
-                  <Text
-                    style={{
-                      fontSize: 12,
-                      fontWeight: 'bold',
-                      marginTop: 12,
-                      color: 'orange',
-                    }}>
-                    HUD AYAT 6 -
-                  </Text>
-                  <Text
-                    style={{
-                      fontSize: 12,
-                      fontWeight: 'bold',
-                      color: 'orange',
-                      marginBottom: 12,
-                    }}>
-                    YUSUF AYAT 52
-                  </Text>
-                  <View
-                    style={{
-                      backgroundColor: 'purple',
-                      marginTop: 6,
-                      paddingBottom: 6,
-                      borderRadius: 25,
-                    }}>
+                <View style={styles.kotakJuz}>
+                  <Text style={styles.angkaJuz}>JUZ 12</Text>
+                  <Text style={styles.surah1}>HUD AYAT 6 -</Text>
+                  <Text style={styles.surah2}>YUSUF AYAT 52</Text>
+                  <View style={styles.tombolBaca}>
                     <TouchableOpacity
                       onPress={() => navigation.navigate('JUZ1')}>
-                      <Text
-                        style={{
-                          fontSize: 14,
-                          fontWeight: '600',
-                          color: 'white',
-                          textAlign: 'center',
-                        }}>
-                        BACA
-                      </Text>
+                      <Text style={styles.baca}>BACA</Text>
                     </TouchableOpacity>
                   </View>
                 </View>
 
                 {/* jus 13 */}
-                <View
-                  style={{
-                    width: 150,
-                    height: 200,
-                    backgroundColor: 'white',
-                    padding: 10,
-                    border: 5,
-                    borderColor: 'purple',
-                    borderRadius: 8,
-                    margin: 5,
-                  }}>
-                  <Image
-                    source={{
-                      uri: 'https://www.incredible.co.za/media/catalog/product/cache/7ce9addd40d23ee411c2cc726ad5e7ed/1/0/10140077_inc_ecommerce_d533.png',
-                    }}
-                    style={{
-                      width: 60,
-                      height: 50,
-                      borderColor: 'purple',
-                      backgroundColor: 'purple',
-                      borderRadius: 8,
-                    }}
-                  />
-
-                  <Text
-                    style={{fontSize: 14, fontWeight: 'bold', marginTop: 16}}>
-                    JUZ 13
-                  </Text>
-                  <Text
-                    style={{
-                      fontSize: 12,
-                      fontWeight: 'bold',
-                      marginTop: 12,
-                      color: 'orange',
-                    }}>
-                    YUSUF AYAT 53 -
-                  </Text>
-                  <Text
-                    style={{
-                      fontSize: 12,
-                      fontWeight: 'bold',
-                      color: 'orange',
-                      marginBottom: 12,
-                    }}>
-                    IBRAHIM AYAT 52
-                  </Text>
-                  <View
-                    style={{
-                      backgroundColor: 'purple',
-                      marginTop: 6,
-                      paddingBottom: 6,
-                      borderRadius: 25,
-                    }}>
+                <View style={styles.kotakJuz}>
+                  <Text style={styles.angkaJuz}>JUZ 13</Text>
+                  <Text style={styles.surah1}>YUSUF AYAT 53 -</Text>
+                  <Text style={styles.surah2}>IBRAHIM AYAT 52</Text>
+                  <View style={styles.tombolBaca}>
                     <TouchableOpacity
                       onPress={() => navigation.navigate('JUZ1')}>
-                      <Text
-                        style={{
-                          fontSize: 14,
-                          fontWeight: '600',
-                          color: 'white',
-                          textAlign: 'center',
-                        }}>
-                        BACA
-                      </Text>
+                      <Text style={styles.baca}>BACA</Text>
                     </TouchableOpacity>
                   </View>
                 </View>
 
                 {/* jus 14 */}
-                <View
-                  style={{
-                    width: 150,
-                    height: 200,
-                    backgroundColor: 'white',
-                    padding: 10,
-                    border: 5,
-                    borderColor: 'purple',
-                    borderRadius: 8,
-                    margin: 5,
-                  }}>
-                  <Image
-                    source={{
-                      uri: 'https://www.incredible.co.za/media/catalog/product/cache/7ce9addd40d23ee411c2cc726ad5e7ed/1/0/10140077_inc_ecommerce_d533.png',
-                    }}
-                    style={{
-                      width: 60,
-                      height: 50,
-                      borderColor: 'purple',
-                      backgroundColor: 'purple',
-                      borderRadius: 8,
-                    }}
-                  />
-
-                  <Text
-                    style={{fontSize: 14, fontWeight: 'bold', marginTop: 16}}>
-                    JUZ 14
-                  </Text>
-                  <Text
-                    style={{
-                      fontSize: 12,
-                      fontWeight: 'bold',
-                      marginTop: 12,
-                      color: 'orange',
-                    }}>
-                    AL HIJR AYAT 1 -
-                  </Text>
-                  <Text
-                    style={{
-                      fontSize: 12,
-                      fontWeight: 'bold',
-                      color: 'orange',
-                      marginBottom: 12,
-                    }}>
-                    AL NAHL AYAT 128
-                  </Text>
-                  <View
-                    style={{
-                      backgroundColor: 'purple',
-                      marginTop: 6,
-                      paddingBottom: 6,
-                      borderRadius: 25,
-                    }}>
+                <View style={styles.kotakJuz}>
+                  <Text style={styles.angkaJuz}>JUZ 14</Text>
+                  <Text style={styles.surah1}>AL HIJR AYAT 1 -</Text>
+                  <Text style={styles.surah2}>AL NAHL AYAT 128</Text>
+                  <View style={styles.tombolBaca}>
                     <TouchableOpacity
                       onPress={() => navigation.navigate('JUZ1')}>
-                      <Text
-                        style={{
-                          fontSize: 14,
-                          fontWeight: '600',
-                          color: 'white',
-                          textAlign: 'center',
-                        }}>
-                        BACA
-                      </Text>
+                      <Text style={styles.baca}>BACA</Text>
                     </TouchableOpacity>
                   </View>
                 </View>
 
                 {/* jus 15 */}
-                <View
-                  style={{
-                    width: 150,
-                    height: 200,
-                    backgroundColor: 'white',
-                    padding: 10,
-                    border: 5,
-                    borderColor: 'purple',
-                    borderRadius: 8,
-                    margin: 5,
-                    marginBottom: 45,
-                  }}>
-                  <Image
-                    source={{
-                      uri: 'https://www.incredible.co.za/media/catalog/product/cache/7ce9addd40d23ee411c2cc726ad5e7ed/1/0/10140077_inc_ecommerce_d533.png',
-                    }}
-                    style={{
-                      width: 60,
-                      height: 50,
-                      borderColor: 'purple',
-                      backgroundColor: 'purple',
-                      borderRadius: 8,
-                    }}
-                  />
-
-                  <Text
-                    style={{fontSize: 14, fontWeight: 'bold', marginTop: 16}}>
-                    JUZ 15
-                  </Text>
-                  <Text
-                    style={{
-                      fontSize: 12,
-                      fontWeight: 'bold',
-                      marginTop: 12,
-                      color: 'orange',
-                    }}>
-                    AL ISRA' AYAT 1 -
-                  </Text>
-                  <Text
-                    style={{
-                      fontSize: 12,
-                      fontWeight: 'bold',
-                      color: 'orange',
-                      marginBottom: 12,
-                    }}>
-                    AL KAHFI AYAT 74
-                  </Text>
-                  <View
-                    style={{
-                      backgroundColor: 'purple',
-                      marginTop: 6,
-                      paddingBottom: 6,
-                      borderRadius: 25,
-                    }}>
+                <View style={styles.kotakJuz}>
+                  <Text style={styles.angkaJuz}>JUZ 15</Text>
+                  <Text style={styles.surah1}>AL ISRA' AYAT 1 -</Text>
+                  <Text style={styles.surah2}>AL KAHFI AYAT 74</Text>
+                  <View style={styles.tombolBaca}>
                     <TouchableOpacity
                       onPress={() => navigation.navigate('JUZ1')}>
-                      <Text
-                        style={{
-                          fontSize: 14,
-                          fontWeight: '600',
-                          color: 'white',
-                          textAlign: 'center',
-                        }}>
-                        BACA
-                      </Text>
+                      <Text style={styles.baca}>BACA</Text>
                     </TouchableOpacity>
                   </View>
                 </View>
@@ -1135,5 +276,59 @@ const styles = StyleSheet.create({
     color: 'purple',
     // marginTop: 5,
     textAlign: 'center',
+  },
+
+  kotakBesar: {
+    width: 790,
+    margin: 5,
+    backgroundColor: '#da81da92',
+    padding: 5,
+    border: 5,
+    borderColor: 'purple',
+    borderRadius: 8,
+  },
+
+  kotakJuz: {
+    width: 150,
+    height: 115,
+    backgroundColor: 'white',
+    padding: 10,
+    border: 5,
+    borderColor: 'purple',
+    borderRadius: 8,
+    marginLeft: 5,
+  },
+
+  angkaJuz: {
+    fontSize: 25,
+    fontWeight: 'bold',
+    color: 'black',
+    textAlign: 'center',
+  },
+
+  baca: {
+    fontSize: 14,
+    fontWeight: '600',
+    color: 'white',
+    textAlign: 'center',
+  },
+
+  tombolBaca: {
+    backgroundColor: 'purple',
+    paddingBottom: 5,
+    borderRadius: 25,
+  },
+
+  surah1: {
+    fontSize: 12,
+    fontWeight: 'bold',
+    color: 'orange',
+  },
+
+  surah2: {
+    fontSize: 12,
+    fontWeight: 'bold',
+    color: 'orange',
+    marginBottom: 5,
   },
 });
