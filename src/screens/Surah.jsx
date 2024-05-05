@@ -7,10 +7,11 @@ import {
   StatusBar,
   TouchableOpacity,
   ScrollView,
+  TextInput,
 } from 'react-native';
 import React from 'react';
-import DetailSurah1 from './pages/DetailSurah1';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import {SelectList} from 'react-native-dropdown-select-list';
 
 const Surah = ({navigation}) => (
   <View
@@ -19,27 +20,38 @@ const Surah = ({navigation}) => (
       paddingTop: StatusBar.currentHeight,
       marginHorizontal: 16,
     }}>
+    {/* view dasar search bar */}
     <View
       style={{
-        height: 40,
+        height: 35,
         backgroundColor: 'white',
-        alignItems: 'center',
-        flexDirection: 'row',
+        borderRadius: 10,
       }}>
-      <Text style={{backgroundColor: 'white', fontSize: 20, color: 'purple'}}>
-        SURAH AL QURAN
-      </Text>
-      <TouchableOpacity style={{}} onPress={() => navigation.navigate('JUZ1')}>
-        <Ionicons
-          name="search"
+      {/* view seacrh bar */}
+      <View
+        style={{
+          borderWidth: 1,
+          borderRadius: 10,
+          borderColor: 'gray',
+          flex: 1,
+        }}>
+        <TouchableOpacity style={{}}>
+          <Ionicons
+            name="search"
+            style={{
+              fontSize: 30,
+            }}
+          />
+        </TouchableOpacity>
+        <TextInput
           style={{
-            fontSize: 30,
-            marginHorizontal: 130,
-            color: 'white',
-            backgroundColor: 'purple',
+            flex: 1,
+            paddingVertical: 2,
+            marginHorizontal: 16,
+            flexDirection: 'row',
           }}
         />
-      </TouchableOpacity>
+      </View>
     </View>
 
     <View>

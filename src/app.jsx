@@ -84,9 +84,9 @@ function MainTab() {
       <Tab.Screen
         name="SURAH"
         component={Surah}
-        options={{headerShown: false}}
+        // options={{headerShown: false}}
       />
-      <Tab.Screen name="JUZ" component={JUZ} options={{headerShown: false}} />
+      <Tab.Screen name="JUZ" component={JUZ} />
       <Tab.Screen
         name="LAINNYA"
         component={More}
