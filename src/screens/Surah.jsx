@@ -2,8 +2,6 @@ import {
   StyleSheet,
   Text,
   View,
-  SafeAreaView,
-  SectionList,
   StatusBar,
   TouchableOpacity,
   ScrollView,
@@ -11,7 +9,6 @@ import {
 } from 'react-native';
 import React from 'react';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import {SelectList} from 'react-native-dropdown-select-list';
 
 const Surah = ({navigation}) => (
   <View

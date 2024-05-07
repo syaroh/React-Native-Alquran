@@ -1,16 +1,8 @@
-import {
-  StyleSheet,
-  Text,
-  View,
-  Image,
-  ScrollView,
-  TouchableOpacity,
-} from 'react-native';
+import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import React from 'react';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
-const More = () => {
+const Lainnya = () => {
   return (
     <View
       style={{
@@ -88,7 +80,7 @@ const More = () => {
   );
 };
 
-export default More;
+export default Lainnya;
 
 const styles = StyleSheet.create({
   judul: {

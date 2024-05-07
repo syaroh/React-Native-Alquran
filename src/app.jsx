@@ -1,30 +1,6 @@
-// import {StyleSheet, Text, View} from 'react-native';
-// import React from 'react';
-// import Flexbox from './FlexBox';
-// import StylingReactNativeComponent from './StylingReactNativeComponent';
-// import SampleComponent from './SampleComponent';
-// import Navigation from './navigation/navigation';
-
-// const app = () => {
-//   return (
-//     <Navigation></Navigation>
-//     <View>
-//       <Flexbox />
-//       {/* <MyTabs /> */}
-//       {/* <StylingReactNativeComponent /> */}
-//     </View>
-//   );
-// };
-
-// export default app;
-
-// const styles = StyleSheet.create({});
-
-// In App.js in a new project
-
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet} from 'react-native';
 import React from 'react';
-import More from './screens/More';
+import Lainnya from './screens/Lainnya';
 import Surah from './screens/Surah';
 import JUZ from './screens/JUZ';
 import {NavigationContainer} from '@react-navigation/native';
@@ -89,7 +65,7 @@ function MainTab() {
       <Tab.Screen name="JUZ" component={JUZ} />
       <Tab.Screen
         name="LAINNYA"
-        component={More}
+        component={Lainnya}
         options={{headerShown: false}}
       />
     </Tab.Navigator>

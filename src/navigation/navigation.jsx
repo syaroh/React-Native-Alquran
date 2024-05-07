@@ -2,7 +2,7 @@ import * as React from 'react';
 import {View, Text, Settings} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import More from '../screens/More';
+import More from '../screens/Lainnya';
 import Surah from '../screens/Surah';
 import JUZ from '../screens/JUZ';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
