@@ -2,13 +2,12 @@ import {StyleSheet, Text, View, TouchableOpacity, Image} from 'react-native';
 import React from 'react';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
-const Lainnya = () => {
+const Lainnya = ({navigation}) => {
   return (
     <View
       style={{
         marginHorizontal: 15,
         marginTop: 2,
-        borderRadius: 20,
         backgroundColor: '#da81da92',
       }}>
       <View
@@ -18,7 +17,6 @@ const Lainnya = () => {
           alignItems: 'center',
           marginBottom: 5,
           backgroundColor: 'white',
-          borderRadius: 4,
         }}>
         <Image
           source={{
@@ -46,17 +44,23 @@ const Lainnya = () => {
       <View style={styles.viewMenu}>
         <Text style={styles.menu}>Opsi Lain</Text>
 
-        <TouchableOpacity style={styles.tombol}>
+        <TouchableOpacity
+          style={styles.tombol}
+          onPress={() => navigation.navigate('Detail')}>
           <Ionicons name="newspaper-outline" style={styles.icon} />
           <Text style={styles.submenu}>Doa Doa Harian</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.tombol}>
+        <TouchableOpacity
+          style={styles.tombol}
+          onPress={() => navigation.navigate('Detail')}>
           <Ionicons name="musical-note-outline" style={styles.icon} />
           <Text style={styles.submenu}>Al Quran MP3</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.tombol}>
+        <TouchableOpacity
+          style={styles.tombol}
+          onPress={() => navigation.navigate('Detail')}>
           <Ionicons name="sparkles-outline" style={styles.icon} />
           <Text style={styles.submenu}>Asmaul Husna</Text>
         </TouchableOpacity>
@@ -68,12 +72,16 @@ const Lainnya = () => {
       <View style={styles.viewMenu}>
         <Text style={styles.menu}>Umum</Text>
 
-        <TouchableOpacity style={{flexDirection: 'row'}}>
+        <TouchableOpacity
+          style={{flexDirection: 'row'}}
+          onPress={() => navigation.navigate('Detail')}>
           <Ionicons name="alert-circle-outline" style={styles.icon} />
           <Text style={styles.submenu}>Info Aplikasi</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={{flexDirection: 'row'}}>
+        <TouchableOpacity
+          style={{flexDirection: 'row'}}
+          onPress={() => navigation.navigate('Detail')}>
           <Ionicons name="share-social-outline" style={styles.icon} />
           <Text style={styles.submenu}>Bagikan</Text>
         </TouchableOpacity>
@@ -96,7 +104,6 @@ const styles = StyleSheet.create({
   viewMenu: {
     borderBottomWidth: 3,
     borderColor: 'white',
-    borderRadius: 4,
     marginTop: 10,
   },
 
