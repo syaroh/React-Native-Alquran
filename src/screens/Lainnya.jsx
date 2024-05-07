@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
+import {StyleSheet, Text, View, TouchableOpacity, Image} from 'react-native';
 import React from 'react';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
@@ -20,17 +20,21 @@ const Lainnya = () => {
           backgroundColor: 'white',
           borderRadius: 4,
         }}>
-        <View
+        <Image
+          source={{
+            uri: 'https://i.pinimg.com/736x/36/c4/55/36c455b3a2cf9953ca0021932fbeb388.jpg',
+          }}
           style={{
             width: 90,
             height: 90,
-            backgroundColor: 'orange',
+            backgroundColor: 'purple',
             borderRadius: 50,
             flexDirection: 'row',
             marginRight: 35,
             marginLeft: 15,
           }}
         />
+
         <View>
           <Text style={styles.judul}>Al Quran 30 Juz</Text>
           <Text style={{color: 'black'}}>Offline</Text>
