@@ -8,6 +8,7 @@ import {
   TextInput,
 } from 'react-native';
 import React, {useEffect, useState} from 'react';
+import Detail from './pages/Detail';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const Surah = ({navigation}) => {
@@ -36,7 +37,7 @@ const Surah = ({navigation}) => {
             <TouchableOpacity
               style={styles.boxText}
               onPress={() =>
-                navigation.navigate('Detail', {NoSurat: item.nomor})
+                navigation.navigate('Detail', {NoSurat: item.teksArab})
               }
               key={index}>
               <Text style={styles.judul}>{item.nama}</Text>
