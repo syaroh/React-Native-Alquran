@@ -28,9 +28,8 @@ function App() {
           component={JUZ}
           options={{headerShown: false}}
         />
+        <Stack.Screen name="Surah" component={Surah} />
         <Stack.Screen name="Detail" component={Detail} />
-        {/* <Stack.Screen name="JUZ1" component={JUZ1} /> */}
-        {/* <Stack.Screen name="audioSurat" component={audioSurat} /> */}
         <Stack.Screen name="DetailSurah1" component={DetailSurah1} />
       </Stack.Navigator>
     </NavigationContainer>

@@ -1,17 +1,12 @@
 import {
+  ScrollView,
   StyleSheet,
   Text,
-  View,
-  StatusBar,
   TouchableOpacity,
-  ScrollView,
-  TextInput,
-  FlatList,
+  View,
 } from 'react-native';
-import {useEffect, useState} from 'react';
-import Ionicons from 'react-native-vector-icons/Ionicons';
-import axios from 'axios';
-import {SafeAreaView} from 'react-native-safe-area-context';
+import Detail from './pages/Detail';
+import React, {useEffect, useState} from 'react';
 
 const Surah = ({navigation}) => {
   const [data, setData] = useState([]);
@@ -37,15 +32,12 @@ const Surah = ({navigation}) => {
         data.map((item, index) => {
           return (
             <TouchableOpacity
-              style={styles.boxText}
               onPress={() =>
                 navigation.navigate('Detail', {noSurat: item.nomor})
               }
               key={index}>
-              <Text>
-                {item.nomor}, {item.namaLatin}, Jumlah Ayat: {item.namaLatin}
-              </Text>
-              <Text style={styles.judul}>{item.nama}</Text>
+              <Text style={{fontSize: 50}}>{item.nomor} </Text>
+              <Text style={{fontSize: 50}}>{item.nama}</Text>
             </TouchableOpacity>
           );
         })}
@@ -55,13 +47,4 @@ const Surah = ({navigation}) => {
 
 export default Surah;
 
-const styles = StyleSheet.create({
-  item: {
-    fontSize: 18,
-  },
-  tombol: {
-    backgroundColor: '#f9c2ff',
-    padding: 8,
-    marginVertical: 2,
-  },
-});
+const styles = StyleSheet.create({});

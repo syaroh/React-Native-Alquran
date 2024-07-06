@@ -22,15 +22,50 @@ const Detail = ({route}) => {
     ambilData();
   });
   return (
-    <View>
-      {data &&
-        data.map((item, i) => {
-          return <Text key={i}>{item.teksArab}</Text>;
-        })}
+    <View style={styles.wrapperSurah}>
+      <View style={styles.wrapperAyat}>
+        {data &&
+          data.map((item, i) => {
+            <Text key={i} style={styles.wrapperNomor}>
+              {item.nomor}
+            </Text>;
+            return (
+              <Text key={i} style={styles.wrapperArab}>
+                {item.teksArab}
+              </Text>
+            );
+          })}
+        <Text key={i} style={styles.wrapperIndo}>
+          {item.teksIndonesia}
+        </Text>
+      </View>
     </View>
   );
 };
 
 export default Detail;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  wrapperSurah: {
+    flex: 1,
+  },
+  wrapperAyat: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    margin: 8,
+  },
+
+  wrapperArab: {
+    flex: 1,
+    fontSize: 19,
+    lineHeight: 50,
+  },
+  wrapperIndo: {
+    padding: 8,
+    backgroundColor: 'purple',
+    color: 'white',
+    borderRadius: 'center',
+    justifyContent: 'center',
+    marginVertical: 8,
+  },
+});
