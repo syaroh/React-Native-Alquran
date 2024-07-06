@@ -1,6 +1,7 @@
 import {StyleSheet, Text, View, TouchableOpacity, Image} from 'react-native';
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import audioSurat from './pages/audioSurat';
 
 const Lainnya = ({navigation}) => {
   return (
@@ -44,23 +45,17 @@ const Lainnya = ({navigation}) => {
       <View style={styles.viewMenu}>
         <Text style={styles.menu}>Opsi Lain</Text>
 
-        <TouchableOpacity
-          style={styles.tombol}
-          onPress={() => navigation.navigate('Detail')}>
+        <TouchableOpacity style={styles.tombol}>
           <Ionicons name="newspaper-outline" style={styles.icon} />
           <Text style={styles.submenu}>Doa Doa Harian</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity
-          style={styles.tombol}
-          onPress={() => navigation.navigate('Detail')}>
+        <TouchableOpacity style={styles.tombol}>
           <Ionicons name="musical-note-outline" style={styles.icon} />
-          <Text style={styles.submenu}>Al Quran MP3</Text>
+          <Text style={styles.submenu}>Al Quran MP3 </Text>
         </TouchableOpacity>
 
-        <TouchableOpacity
-          style={styles.tombol}
-          onPress={() => navigation.navigate('Detail')}>
+        <TouchableOpacity style={styles.tombol}>
           <Ionicons name="sparkles-outline" style={styles.icon} />
           <Text style={styles.submenu}>Asmaul Husna</Text>
         </TouchableOpacity>

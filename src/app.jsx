@@ -8,8 +8,8 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Detail from './screens/pages/Detail';
-import JUZ1 from './screens/pages/JUZ1';
 import DetailSurah1 from './screens/pages/DetailSurah1';
+import audioSurat from './screens/pages/audioSurat';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -29,7 +29,8 @@ function App() {
           options={{headerShown: false}}
         />
         <Stack.Screen name="Detail" component={Detail} />
-        <Stack.Screen name="JUZ1" component={JUZ1} />
+        {/* <Stack.Screen name="JUZ1" component={JUZ1} /> */}
+        {/* <Stack.Screen name="audioSurat" component={audioSurat} /> */}
         <Stack.Screen name="DetailSurah1" component={DetailSurah1} />
       </Stack.Navigator>
     </NavigationContainer>

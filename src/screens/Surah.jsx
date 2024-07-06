@@ -6,10 +6,12 @@ import {
   TouchableOpacity,
   ScrollView,
   TextInput,
+  FlatList,
 } from 'react-native';
-import React, {useEffect, useState} from 'react';
-import Detail from './pages/Detail';
+import {useEffect, useState} from 'react';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import axios from 'axios';
+import {SafeAreaView} from 'react-native-safe-area-context';
 
 const Surah = ({navigation}) => {
   const [data, setData] = useState([]);
@@ -37,9 +39,12 @@ const Surah = ({navigation}) => {
             <TouchableOpacity
               style={styles.boxText}
               onPress={() =>
-                navigation.navigate('Detail', {NoSurat: item.teksArab})
+                navigation.navigate('Detail', {noSurat: item.nomor})
               }
               key={index}>
+              <Text>
+                {item.nomor}, {item.namaLatin}, Jumlah Ayat: {item.namaLatin}
+              </Text>
               <Text style={styles.judul}>{item.nama}</Text>
             </TouchableOpacity>
           );
@@ -47,6 +52,9 @@ const Surah = ({navigation}) => {
     </ScrollView>
   );
 };
+
+export default Surah;
+
 const styles = StyleSheet.create({
   item: {
     fontSize: 18,
@@ -57,5 +65,3 @@ const styles = StyleSheet.create({
     marginVertical: 2,
   },
 });
-
-export default Surah;

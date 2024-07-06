@@ -259,7 +259,154 @@ export default function JUZ({navigation}) {
         {/* Akhir View 3 */}
 
         {/* View 4 */}
+        <View>
+          <ScrollView horizontal={true}>
+            <View style={styles.kotakBesar}>
+              <ScrollView horizontal={true}>
+                {/* jus 11 */}
+                <View style={styles.kotakJuz}>
+                  <Text style={styles.angkaJuz}>JUZ 11</Text>
+                  <Text style={styles.surah1}>AT TAUBAH AYAT 93 -</Text>
+                  <Text style={styles.surah2}>HUD AYAT 5</Text>
+                  <View style={styles.tombolBaca}>
+                    <TouchableOpacity
+                      onPress={() => navigation.navigate('JUZ1')}>
+                      <Text style={styles.baca}>BACA</Text>
+                    </TouchableOpacity>
+                  </View>
+                </View>
+
+                {/* jus 12 */}
+                <View style={styles.kotakJuz}>
+                  <Text style={styles.angkaJuz}>JUZ 13</Text>
+                  <Text style={styles.surah1}>HUD AYAT 6 -</Text>
+                  <Text style={styles.surah2}>YUSUF AYAT 52</Text>
+                  <View style={styles.tombolBaca}>
+                    <TouchableOpacity
+                      onPress={() => navigation.navigate('JUZ1')}>
+                      <Text style={styles.baca}>BACA</Text>
+                    </TouchableOpacity>
+                  </View>
+                </View>
+
+                {/* jus 13 */}
+                <View style={styles.kotakJuz}>
+                  <Text style={styles.angkaJuz}>JUZ 14</Text>
+                  <Text style={styles.surah1}>YUSUF AYAT 53 -</Text>
+                  <Text style={styles.surah2}>IBRAHIM AYAT 52</Text>
+                  <View style={styles.tombolBaca}>
+                    <TouchableOpacity
+                      onPress={() => navigation.navigate('JUZ1')}>
+                      <Text style={styles.baca}>BACA</Text>
+                    </TouchableOpacity>
+                  </View>
+                </View>
+
+                {/* jus 14 */}
+                <View style={styles.kotakJuz}>
+                  <Text style={styles.angkaJuz}>JUZ 15</Text>
+                  <Text style={styles.surah1}>AL HIJR AYAT 1 -</Text>
+                  <Text style={styles.surah2}>AL NAHL AYAT 128</Text>
+                  <View style={styles.tombolBaca}>
+                    <TouchableOpacity
+                      onPress={() => navigation.navigate('JUZ1')}>
+                      <Text style={styles.baca}>BACA</Text>
+                    </TouchableOpacity>
+                  </View>
+                </View>
+
+                {/* jus 15 */}
+                <View style={styles.kotakJuz}>
+                  <Text style={styles.angkaJuz}>JUZ 16</Text>
+                  <Text style={styles.surah1}>AL ISRA' AYAT 1 -</Text>
+                  <Text style={styles.surah2}>AL KAHFI AYAT 74</Text>
+                  <View style={styles.tombolBaca}>
+                    <TouchableOpacity
+                      onPress={() => navigation.navigate('JUZ1')}>
+                      <Text style={styles.baca}>BACA</Text>
+                    </TouchableOpacity>
+                  </View>
+                </View>
+              </ScrollView>
+            </View>
+          </ScrollView>
+        </View>
         {/* akhir View 4 */}
+
+        {/* View 5 */}
+        <View>
+          <ScrollView horizontal={true}>
+            <View style={styles.kotakBesar}>
+              <ScrollView horizontal={true}>
+                {/* jus 11 */}
+                <View style={styles.kotakJuz}>
+                  <Text style={styles.angkaJuz}>JUZ 11</Text>
+                  <Text style={styles.surah1}>AT TAUBAH AYAT 93 -</Text>
+                  <Text style={styles.surah2}>HUD AYAT 5</Text>
+                  <View style={styles.tombolBaca}>
+                    <TouchableOpacity
+                      onPress={() => navigation.navigate('JUZ1')}>
+                      <Text style={styles.baca}>BACA</Text>
+                    </TouchableOpacity>
+                  </View>
+                </View>
+
+                {/* jus 12 */}
+                <View style={styles.kotakJuz}>
+                  <Text style={styles.angkaJuz}>JUZ 12</Text>
+                  <Text style={styles.surah1}>HUD AYAT 6 -</Text>
+                  <Text style={styles.surah2}>YUSUF AYAT 52</Text>
+                  <View style={styles.tombolBaca}>
+                    <TouchableOpacity
+                      onPress={() => navigation.navigate('JUZ1')}>
+                      <Text style={styles.baca}>BACA</Text>
+                    </TouchableOpacity>
+                  </View>
+                </View>
+
+                {/* jus 13 */}
+                <View style={styles.kotakJuz}>
+                  <Text style={styles.angkaJuz}>JUZ 13</Text>
+                  <Text style={styles.surah1}>YUSUF AYAT 53 -</Text>
+                  <Text style={styles.surah2}>IBRAHIM AYAT 52</Text>
+                  <View style={styles.tombolBaca}>
+                    <TouchableOpacity
+                      onPress={() => navigation.navigate('JUZ1')}>
+                      <Text style={styles.baca}>BACA</Text>
+                    </TouchableOpacity>
+                  </View>
+                </View>
+
+                {/* jus 14 */}
+                <View style={styles.kotakJuz}>
+                  <Text style={styles.angkaJuz}>JUZ 14</Text>
+                  <Text style={styles.surah1}>AL HIJR AYAT 1 -</Text>
+                  <Text style={styles.surah2}>AL NAHL AYAT 128</Text>
+                  <View style={styles.tombolBaca}>
+                    <TouchableOpacity
+                      onPress={() => navigation.navigate('JUZ1')}>
+                      <Text style={styles.baca}>BACA</Text>
+                    </TouchableOpacity>
+                  </View>
+                </View>
+
+                {/* jus 15 */}
+                <View style={styles.kotakJuz}>
+                  <Text style={styles.angkaJuz}>JUZ 17</Text>
+                  <Text style={styles.surah1}>AL ISRA' AYAT 1 -</Text>
+                  <Text style={styles.surah2}>AL KAHFI AYAT 74</Text>
+                  <View style={styles.tombolBaca}>
+                    <TouchableOpacity
+                      onPress={() => navigation.navigate('JUZ1')}>
+                      <Text style={styles.baca}>BACA</Text>
+                    </TouchableOpacity>
+                  </View>
+                </View>
+              </ScrollView>
+            </View>
+          </ScrollView>
+        </View>
+        {/* akhir View 5 */}
       </ScrollView>
     </View>
   );

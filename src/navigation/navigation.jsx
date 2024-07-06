@@ -7,7 +7,7 @@ import Surah from '../screens/Surah';
 import JUZ from '../screens/JUZ';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Detail from '../screens/pages/Detail';
-import JUZ1 from '../screens/pages/JUZ1';
+import JUZ1 from '../screens/pages/audioSurat';
 import DetailSurah1 from '../screens/pages/DetailSurah1';
 
 const Stack = createNativeStackNavigator();
