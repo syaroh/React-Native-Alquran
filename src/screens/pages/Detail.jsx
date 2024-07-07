@@ -1,18 +1,17 @@
-import {Alert, Image, ScrollView, StyleSheet, Text, View} from 'react-native';
+import {FlatList, StyleSheet, Text, View} from 'react-native';
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 
 const Detail = ({route}) => {
-  const {noSurat} = route.params;
-  const [data, setData] = useState([]);
+  const [listAyat, setlistAyat] = useState([]);
 
   const ambilData = async () => {
     try {
       // proses ambil data
-      const dataApi = await fetch(`https://equran.id/api/v2/surat/${noSurat}`);
-      const hasil = await dataApi.json();
-      return setData(hasil.data.ayat);
-      // console.log(hasil.data);
+      await axios.get(route.params.surahId).then(res => {
+        console.log(res.data.data.verses);
+        setlistAyat(res.data.data.verses);
+      });
     } catch (error) {
       console.log(error);
     }
@@ -22,23 +21,22 @@ const Detail = ({route}) => {
     ambilData();
   });
   return (
-    <View style={styles.wrapperSurah}>
-      <View style={styles.wrapperAyat}>
-        {data &&
-          data.map((item, i) => {
-            <Text key={i} style={styles.wrapperNomor}>
-              {item.nomor}
-            </Text>;
-            return (
-              <Text key={i} style={styles.wrapperArab}>
-                {item.teksArab}
+    <View style={styles.wrapper}>
+      <FlatList
+        data={listAyat}
+        renderItem={(item, index) => (
+          <View style={styles.wrapperSurah}>
+            <View style={styles.wrapperAyat}>
+              <Text style={styles.wrapperNumber}>
+                {item.item.number.inSurah}
               </Text>
-            );
-          })}
-        <Text key={i} style={styles.wrapperIndo}>
-          {item.teksIndonesia}
-        </Text>
-      </View>
+              <Text style={styles.wrapperArab}>{item.item.text.arab}</Text>
+            </View>
+
+            <Text style={styles.wrapperIndo}>{item.item.translation.id}</Text>
+          </View>
+        )}
+      />
     </View>
   );
 };
@@ -48,6 +46,7 @@ export default Detail;
 const styles = StyleSheet.create({
   wrapperSurah: {
     flex: 1,
+    padding: 8,
   },
   wrapperAyat: {
     flexDirection: 'row',
@@ -64,7 +63,7 @@ const styles = StyleSheet.create({
     padding: 8,
     backgroundColor: 'purple',
     color: 'white',
-    borderRadius: 'center',
+    borderRadius: 10,
     justifyContent: 'center',
     marginVertical: 8,
   },

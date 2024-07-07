@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import React from 'react';
+import React, {useState} from 'react';
 import Lainnya from './screens/Lainnya';
 import Surah from './screens/Surah';
 import JUZ from './screens/JUZ';
@@ -9,12 +9,16 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Detail from './screens/pages/Detail';
 import DetailSurah1 from './screens/pages/DetailSurah1';
-import audioSurat from './screens/pages/audioSurat';
+import JUZ1 from './screens/pages/JUZ1';
+import audioQuran from './screens/pages/audioQuran';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
+BASE_URL = 'https://api.quran.gading.dev/';
+
 function App() {
+  const [isOpen, setisOpen] = useState(false);
   return (
     <NavigationContainer>
       <Stack.Navigator>
@@ -30,6 +34,8 @@ function App() {
         />
         <Stack.Screen name="Surah" component={Surah} />
         <Stack.Screen name="Detail" component={Detail} />
+        <Stack.Screen name="audioQuran" component={audioQuran} />
+        <Stack.Screen name="JUZ1" component={JUZ1} />
         <Stack.Screen name="DetailSurah1" component={DetailSurah1} />
       </Stack.Navigator>
     </NavigationContainer>

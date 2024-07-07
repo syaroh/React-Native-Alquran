@@ -9,6 +9,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Detail from '../screens/pages/Detail';
 import JUZ1 from '../screens/pages/audioSurat';
 import DetailSurah1 from '../screens/pages/DetailSurah1';
+import audioQuran from '../screens/pages/audioQuran';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -20,6 +21,7 @@ function Navigation() {
         <Stack.Screen name="MainTab" component={MainTab} />
         <Stack.Screen name="More" component={More} />
         <Stack.Screen name="JUZ" component={JUZ} />
+        <Stack.Screen name="MP3" component={audioQuran} />
         <Stack.Screen name="Detail" component={Detail} />
         <Stack.Screen name="DetailSurah1" component={DetailSurah1} />
       </Stack.Navigator>
@@ -33,6 +35,7 @@ function MainTab() {
       <Tab.Screen name="Surah" component={Surah} />
       <Tab.Screen name="JUZ" component={JUZ} />
       <Tab.Screen name="More" component={More} />
+      <Stack.Screen name="MP3" component={audioQuran} />
       <Stack.Screen name="Detail" component={Detail} />
       <Stack.Screen name="JUZ1" component={JUZ1} />
       <Stack.Screen name="DetailSurah1" component={DetailSurah1} />
